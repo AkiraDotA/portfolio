@@ -1,0 +1,158 @@
+{
+  "basics": {
+    "name": "David A. Lash",
+    "label": "Professor",
+    "picture": "https://dlash02.github.io/images/david-lash.jpg",
+    "email": "dlash@aurora.edu",
+    "phone": "",
+    "website": "https://dlash02.github.io",
+    "summary": "Assistant Professor of Computer Science" ,
+    "location": {
+      "address": "347 S Gladstone Ave",
+      "postalCode": "60506",
+      "city": "Aurora",
+      "countryCode": "USA",
+      "region": "Illinois"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "dlash02",
+        "url": "http://github.com/dlash02"
+      },
+      {
+        "network": "linkedin",
+        "username": "dlash02",
+        "url": "http://linkedin.com/in/david-lash-9920751"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "Software Engineering",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Web Development",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "level": "",
+      "keywords": [
+        "C",
+        "C#",
+        "Java",
+        "Perl",
+        "PHP",
+        "Javascript",
+        "Jquery",
+        "BootStrap",
+        "node.js",
+        "Laravel"
+      ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "level": "",
+      "keywords": [
+        "MacOS",
+        "Ubuntu",
+        "Git/GitHub",
+        "Linux"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Illinois Institute of Technology",
+      "area": "Computer Science ",
+      "studyType": "PhD - ABD",
+      "startDate": "1990",
+      "endDate": "1992",
+      "gpa": "3.9",
+      "courses": [ "Software Engineering, Software Metrics, Design of Experiments, Advanced Sofwtare Engineering",
+                  "Atrificial Intelligence, Advanced Software Engineering, Modeling and Simulation"
+      ]
+    },   {
+      "institution": "University of Waterloo",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "8-1982",
+      "endDate": "10-1983",
+      "gpa": "",
+      "courses": [
+        "Software Engineering, Advanced Sofwtare Engineering, Theory of Computing, Programming Languages",
+                  "Atrificial Intelligence, Real-Time Systems, Operating Systems, Computation Complexity, Algorithms Analysis"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Aurora University",
+      "position": "Assistant Professor of Computer Science",
+      "website": "",
+      "startDate": "2018-06-01",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Software Engineering, Capstone, Java OOP, Data Structures",
+        "Web Devlopment, Advanced Web Development, Database, Introduction to Programming, Mobile Development"
+      ]
+    },
+    {
+      "company": "Lucent/Alcatel-Lucent,Nokia",
+      "position": "Distinuished Member of Technical Staff",
+      "website": "http://www.nokia.com",
+      "startDate": "1997-01-01",
+      "endDate": "2018-06-01",
+      "summary": "",
+      "highlights": [
+        "Lead developer for several web-based data warehousing projects. Led and participated in Scum teams from 3-5 to develop",
+        "and support software. Technologies include PHP, Laravel, Java, C#, Oracle, MySQL, SQL Server, Linux and DB Admin, ",
+        "Network Monitoring and control, System Installation, Apache Web Server Admin, System Engineering, Business Intelligence, Data Warehousing"
+      ]
+    }, {
+      "company": "GE Capital",
+      "position": "IT Director",
+      "website": "http://www.lucent.com",
+      "startDate": "1996-10-1",
+      "endDate": "1997-10-1",
+      "summary": "",
+      "highlights": [
+        "IT Manager (5 direct reports) responsible for standards definition, computer systems architecture, engineering, ",
+        "performance tuning, and product evaluation. Engineered 6 HPUX/Oracle Systems Architecture and configuration connected",
+        "to an EMC storage array with 600 GB of total data space. ",
+        "Led the project to install and industrialize the environment for production that included HP OpenView, ITO, and omni-backup"
+      ]
+    }, {
+      "company": "AT&T Bell Labs",
+      "position": "Member of Technical Staff",
+      "website": "http://www.lucent.com",
+      "startDate": "1996-10-1",
+      "endDate": "1982-8-1",
+      "summary": [
+        "Lead IT Engineer and Software Developer for the IT Department. Evaluated hardware, built business cases, led ",
+        "disaster recovery teams, led teams of system admins, built network and system montioring tools, ",
+        "evaluated and deployed distributed backup/restore software, led quality assurance teams, and interfaced with IT customers. "
+      ],
+      "highlights": [
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request",
+      "reference": ""
+    }
+  ]
+}
