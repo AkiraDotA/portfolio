@@ -1,7 +1,478 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="acdba25a-0075-4bee-96c1-834ccd5c0c4d" name="Changes" comment="" />
+    <list default="true" id="acdba25a-0075-4bee-96c1-834ccd5c0c4d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/bio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-awards-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-awards-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-education-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-education-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-interests-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-network-links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-publications-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-publications-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-references-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-skills-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-volunteer-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-volunteer-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-work-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/bio-work-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/essay-card-1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/essay-card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/essay-row.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/home-network-links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/menubar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/project-card-1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/project-card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/project-row.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-bio-builtin-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-bio-builtin-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-essays-builtin-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-essays-builtin-1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-essays-builtin-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-home-builtin-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-home-builtin-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-home-builtin-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-projects-builtin-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-projects-builtin-1a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/theme-projects-builtin-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/bio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/essay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/essays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/missingpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/flex-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/owl-carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/templatemo-breezed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/flexslider-icon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/flexslider-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/flexslider-icon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/flexslider-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/banner-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/contact-info-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/contact-info-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/contact-info-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/dotted-map-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/features-icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/member-item-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-big-item-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-item-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/service-item-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/slide-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/slide-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/slide-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/imgfix.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/owl-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scrollreveal.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bio/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/print-customizations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/print-default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/base16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/base16.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/base16.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/base16.solarized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/colorful.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/github.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/gruvbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/igorpro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/molokai.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/monokai.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/thankful_eyes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rouge/tulip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/accordion.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/accordion.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/ad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/ad.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/api.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/breadcrumb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/breadcrumb.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/button.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/card.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/card.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/checkbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/checkbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/comment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/comment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/container.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dimmer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dimmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dimmer.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dimmer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/divider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/divider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dropdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dropdown.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/dropdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/embed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/embed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/embed.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/embed.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/feed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/feed.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/flag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/flag.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/form.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/form.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/header.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/icon.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/image.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/input.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/item.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/item.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/label.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/label.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/list.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/loader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/loader.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/menu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/message.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/modal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/modal.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/modal.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/nag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/nag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/nag.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/nag.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/popup.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/progress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/progress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/progress.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/progress.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rail.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rating.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rating.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/rating.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/reset.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/reveal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/reveal.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/search.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/search.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/segment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/segment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/shape.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/shape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/shape.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/shape.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sidebar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sidebar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/site.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/site.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/state.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/statistic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/statistic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/step.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/step.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sticky.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sticky.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/sticky.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/tab.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/tab.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/tab.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/table.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/transition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/transition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/transition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/visibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/components/visibility.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/semantic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/semantic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/semantic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/semantic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/basic/assets/fonts/icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/basic/assets/fonts/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/basic/assets/fonts/icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/basic/assets/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/fonts/icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/fonts/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/fonts/icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/fonts/icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/default/assets/images/flags.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/github/assets/fonts/octicons-local.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/github/assets/fonts/octicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/github/assets/fonts/octicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/github/assets/fonts/octicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/material/assets/fonts/icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/material/assets/fonts/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/material/assets/fonts/icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/semantic-ui/themes/material/assets/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet-customizations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet-default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/images/lead-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/images/project.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/js/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/libs/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportfolio-master/scss/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essays/2015-08-26.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essays/2015-09-08.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essays/2016-02-06.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essays/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/aim.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/cotton-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/cotton-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/david-lash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/davidlash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/degree_difficulty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/design-technology.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/gpa.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/hearts.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/inventory-management.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/inventory-management2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/micromouse-circuit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/micromouse-robot-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/micromouse-robot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/micromouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/molly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/nursing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/paintbrush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/paintbrushes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/rtfm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/software-code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/vacay-home-page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images - Copy/vacay-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IEEE.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IEEELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/WWCGI.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/WWPHP.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/aim.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cotton-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cotton-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/david-lash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/davidlash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/degree_difficulty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/design-technology.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gpa.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hearts.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/inventory-management.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/inventory-management2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lead-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/micromouse-circuit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/micromouse-robot-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/micromouse-robot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/micromouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/molly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nursing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/paintbrush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/paintbrushes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/project.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rtfm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/software-code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vacay-home-page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vacay-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/colorize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/dimmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/embed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/nag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/progress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/shape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/visibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/semantic-ui/visit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/styles.scss" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,24 +481,72 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="1xP5I4gNRF4BMMCEy5Ya0vVqYXR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "portfolio",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/GitHub/akiradota.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "E:\\Program Files\\JetBrains\\WebStorm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dlash\Documents\GitHub\dlash02.github.io" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitHub\akiradota.github.io" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.preview">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="preview" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="preview" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.preview" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +561,8 @@
       <workItem from="1630328227942" duration="63000" />
       <workItem from="1630345021805" duration="3154000" />
       <workItem from="1630516518348" duration="595000" />
+      <workItem from="1692393920890" duration="439000" />
+      <workItem from="1692394382192" duration="736000" />
     </task>
     <servers />
   </component>
