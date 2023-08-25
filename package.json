@@ -1,6 +1,6 @@
 {
-  "version": "0.0.4",
-  "name": "akiradota.github.io",
+  "version": "0.0.5",
+  "name": "portfolio",
   "author": "Zac Holly",
   "description": "A portfolio website built with Nuxt.js.",
   "private": true,
@@ -13,10 +13,13 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.3",
     "eslint": "^8.47.0",
     "eslint-config-xo": "^0.43.1",
+    "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.17.0",
     "nuxt": "^3.6.5"
   }
