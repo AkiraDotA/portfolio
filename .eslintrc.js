@@ -34,5 +34,6 @@ module.exports = {
 			singleline: 2,
 			multiline: 1,
 		}],
+		'object-curly-spacing': ['error', 'always'],
 	},
 };
