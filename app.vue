@@ -1,8 +1,10 @@
-<template>
-  <div>
-    <NuxtPage />
-  </div>
-</template>
-
 <script setup>
 </script>
+
+<template>
+  <div class="font-poppins max-w-screen-2xl my-16 mx-8">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
+</template>
