@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="flex flex-wrap lg:justify-center justify-end content-center items-center max-sm:mb-2">
-    <span class="text-lg text-neutral-400">Powered by</span>
+  <div class="flex flex-wrap lg:justify-center justify-end content-center items-center max-sm:mb-2 max-sm:ms-2">
+    <span class="sm:text-lg text-neutral-400">Powered by</span>
     <NuxtLink
       to="https://nuxt.com"
       target="_blank"
@@ -13,7 +13,7 @@
         xmlns="http://www.w3.org/2000/svg"
         width="80"
         viewBox="0 0 128 32"
-        class="fill-darkred group-hover:fill-darkred-300 transition duration-300 ms-2 mb-1.5"
+        class="fill-darkred group-hover:fill-darkred-300 transition duration-300 ms-2 mb-1.5 max-sm:mb-1 max-sm:!w-[72px]"
       >
         <path d="M60.32 32C60.6656 32 60.96 31.7135 60.96 31.36V16.48C60.96 16.48 61.76 17.92 63.2 20.32L69.44 31.04C69.7255 31.6384 70.359 32 70.88 32H75.2V8H70.88C70.5923 8 70.24 8.23906 70.24 8.64V23.68L67.36 18.56L61.6 8.8C61.3197 8.3026 60.7166 8 60.16 8H56V32H60.32Z" />
         <path d="M116.16 14.72H118.24C118.77 14.72 119.2 14.2902 119.2 13.76V9.6H123.68V14.72H128V18.56H123.68V25.44C123.68 27.12 124.489 27.84 125.92 27.84H128V32H125.28C121.592 32 119.2 29.6114 119.2 25.6V18.56H116.16V14.72Z" />

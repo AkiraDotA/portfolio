@@ -12,7 +12,7 @@ const route = useRoute();
 <template>
   <NuxtLink
     :to="to"
-    class="group block hover:!bg-neutral-800 transition duration-300 lg:text-lg max-sm:text-sm w-full lg:p-4 p-2 max-sm:py-3"
+    class="group block hover:!bg-neutral-800 transition duration-300 lg:text-lg sm:text-sm max-sm:text-xs w-full lg:p-4 p-2 max-sm:py-3"
   >
     <span
       :class="{'bg-[length:100%_2px]': route.path === to}"
