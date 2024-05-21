@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="max-lg:flex items-center">
+  <div class="max-lg:flex items-center max-sm:mb-4">
     <img
       src="public/images/profile.png"
       alt="Zac Holly"
