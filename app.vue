@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="font-poppins max-w-screen-2xl my-16 mx-auto">
+  <div class="font-poppins max-w-screen-2xl mx-auto">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

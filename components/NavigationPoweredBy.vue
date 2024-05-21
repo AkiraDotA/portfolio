@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex flex-wrap lg:justify-center justify-end content-center items-center">
+  <div class="flex flex-wrap lg:justify-center justify-end content-center items-center max-sm:mb-2">
     <span class="text-lg text-neutral-400">Powered by</span>
     <NuxtLink
       to="https://nuxt.com"
