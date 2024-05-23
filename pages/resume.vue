@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <SectionTitle>Home</SectionTitle>
+    <SectionTitle>Resume</SectionTitle>
     Placeholder
   </div>
 </template>
