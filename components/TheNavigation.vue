@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="max-sm:fixed bottom-0 left-0 w-full">
+  <div class="max-sm:z-50 max-sm:fixed bottom-0 left-0 w-full">
     <div class="nav-topper bg-darkred h-8 mt-6 max-lg:hidden" />
     <nav class="max-lg:flex">
       <NavigationButton to="/" class="bg-darkred-100 lg:border-x-2 border-y-2 border-s-2 border-darkred-100">

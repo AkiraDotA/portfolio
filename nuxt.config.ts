@@ -19,6 +19,6 @@ export default defineNuxtConfig({
 		},
 	},
 	ui: {
-		icons: ['mdi'],
+		icons: ['mdi', 'simple-icons', 'hugeicons'],
 	},
 });
