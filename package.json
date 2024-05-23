@@ -14,7 +14,6 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.3",
     "eslint": "^8.47.0",
@@ -24,6 +23,7 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
-    "@iconify-json/mdi": "^1.1.66"
+    "@iconify-json/mdi": "^1.1.66",
+    "@nuxt/ui": "^2.16.0"
   }
 }
