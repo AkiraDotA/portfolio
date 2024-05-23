@@ -6,7 +6,7 @@
     <img
       src="public/images/profile.png"
       alt="Zac Holly"
-      class="ring-2 ring-darkred rounded-lg lg:w-64 sm:w-28 w-24 lg:mx-auto me-8"
+      class="ring-2 ring-darkred rounded-lg lg:min-w-[185px] sm:min-w-[120px] w-[100px] lg:mx-auto me-8"
     >
     <h2 class="text-2xl max-sm:text-xl lg:my-4">
       Zac Holly
