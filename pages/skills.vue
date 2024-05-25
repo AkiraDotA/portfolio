@@ -84,7 +84,7 @@
       <SkillCard skill-icon="office-365" icon-collection="hugeicons">
         Office.js
       </SkillCard>
-      <SkillCard skill-icon="oracle">
+      <SkillCard skill-icon="java" icon-collection="hugeicons">
         JavaFX
       </SkillCard>
     </div>
