@@ -5,9 +5,9 @@
   <div>
     <SectionTitle>Skills</SectionTitle>
 
-    <h3 class="text-xl font-bold mt-8 mb-4">
+    <SkillCategoryHeading>
       Frontend
-    </h3>
+    </SkillCategoryHeading>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       <SkillCard skill-icon="html5">
         HTML
@@ -41,9 +41,9 @@
       </SkillCard>
     </div>
 
-    <h3 class="text-xl font-bold mt-8 mb-4">
+    <SkillCategoryHeading>
       Backend
-    </h3>
+    </SkillCategoryHeading>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       <SkillCard skill-icon="nodedotjs">
         Node.js
@@ -68,18 +68,18 @@
       </SkillCard>
     </div>
 
-    <h3 class="text-xl font-bold mt-8 mb-4">
+    <SkillCategoryHeading>
       Databases
-    </h3>
+    </SkillCategoryHeading>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       <SkillCard skill-icon="mysql">
         MySQL
       </SkillCard>
     </div>
 
-    <h3 class="text-xl font-bold mt-8 mb-4">
+    <SkillCategoryHeading>
       Additional Technologies
-    </h3>
+    </SkillCategoryHeading>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       <SkillCard skill-icon="office-365" icon-collection="hugeicons">
         Office.js
@@ -89,9 +89,9 @@
       </SkillCard>
     </div>
 
-    <h3 class="text-xl font-bold mt-8 mb-4">
+    <SkillCategoryHeading>
       IDEs and Tools
-    </h3>
+    </SkillCategoryHeading>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       <SkillCard skill-icon="jetbrains">
         JetBrains IDEs
