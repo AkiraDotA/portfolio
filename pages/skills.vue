@@ -5,10 +5,7 @@
   <div>
     <SectionTitle>Skills</SectionTitle>
 
-    <SkillCategoryHeading>
-      Frontend
-    </SkillCategoryHeading>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    <SkillGrid label="Frontend">
       <SkillCard skill-icon="html5">
         HTML
       </SkillCard>
@@ -39,12 +36,9 @@
       <SkillCard skill-icon="tailwindcss">
         Tailwind CSS
       </SkillCard>
-    </div>
+    </SkillGrid>
 
-    <SkillCategoryHeading>
-      Backend
-    </SkillCategoryHeading>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    <SkillGrid label="Backend">
       <SkillCard skill-icon="nodedotjs">
         Node.js
       </SkillCard>
@@ -66,33 +60,24 @@
       <SkillCard skill-icon="chai">
         Chai
       </SkillCard>
-    </div>
+    </SkillGrid>
 
-    <SkillCategoryHeading>
-      Databases
-    </SkillCategoryHeading>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    <SkillGrid label="Databases">
       <SkillCard skill-icon="mysql">
         MySQL
       </SkillCard>
-    </div>
+    </SkillGrid>
 
-    <SkillCategoryHeading>
-      Additional Technologies
-    </SkillCategoryHeading>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    <SkillGrid label="Additional Technologies">
       <SkillCard skill-icon="office-365" icon-collection="hugeicons">
         Office.js
       </SkillCard>
       <SkillCard skill-icon="java" icon-collection="hugeicons">
         JavaFX
       </SkillCard>
-    </div>
+    </SkillGrid>
 
-    <SkillCategoryHeading>
-      IDEs and Tools
-    </SkillCategoryHeading>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    <SkillGrid label="IDEs and Tools">
       <SkillCard skill-icon="jetbrains">
         JetBrains IDEs
       </SkillCard>
@@ -114,6 +99,6 @@
       <SkillCard skill-icon="datadog">
         Datadog
       </SkillCard>
-    </div>
+    </SkillGrid>
   </div>
 </template>
