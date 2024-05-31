@@ -3,6 +3,14 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ['@nuxtjs/eslint-module', '@nuxt/ui'],
+	imports: {
+		presets: [
+			{
+				from: '@vueuse/core',
+				imports: ['breakpointsTailwind', 'useBreakpoints', 'useElementSize', 'useMouseInElement'],
+			},
+		],
+	},
 	devServer: {
 		host: 'localhost',
 		port: 3030,

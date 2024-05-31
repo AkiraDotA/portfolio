@@ -1,6 +1,4 @@
 <script setup>
-import { breakpointsTailwind, useBreakpoints, useElementSize } from '@vueuse/core';
-
 const extraSmallBreak = useBreakpoints(breakpointsTailwind).smaller('sm');
 
 const menuContainer = ref(null);
