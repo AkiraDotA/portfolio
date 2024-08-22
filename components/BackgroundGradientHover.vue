@@ -8,30 +8,35 @@ const props = defineProps({
 		type: Number,
 		default: 0,
 	},
+	isOutside: {
+		type: Boolean,
+		default: false,
+	},
 	radialGradientClasses: {
 		type: String,
 		default: '',
 	},
 });
 const { x, y } = toRefs(props);
+
 </script>
 
 <template>
-  <div class="relative overflow-hidden transition duration-300 ease-out p-0.5 bg-gray-800 hover:bg-darkred-400">
+  <div class="relative overflow-hidden z-10 transition-all duration-200 ease-out h-full">
     <div class="slotContainer h-full">
       <slot />
     </div>
     <div
-      v-show="x || y"
-      class="absolute translate-y-[-50%] translate-x-[-50%] pointer-events-none w-[450px] h-[450px] bg-[radial-gradient(circle_closest-side,var(--tw-gradient-stops))] from-darkred-400"
-      :class="radialGradientClasses"
+      v-if="!isOutside"
+      class="absolute w-[300px] h-[300px] translate-y-[-50%] translate-x-[-50%] bg-[radial-gradient(circle_closest-side,var(--tw-gradient-stops))] from-darkred-400 opacity-20 pointer-events-none"
       :style="{top: `${y}px`, left: `${x}px`}"
     />
   </div>
 </template>
 
 <style scoped>
-:deep(.slotContainer) > * {
+:deep(.slotContainer) * * {
+  position: relative;
   z-index: 10;
 }
 </style>

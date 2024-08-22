@@ -35,5 +35,6 @@ module.exports = {
 			multiline: 1,
 		}],
 		'object-curly-spacing': ['error', 'always'],
+		'vue/no-v-html': 0,
 	},
 };

@@ -1,0 +1,66 @@
+<script setup>
+const { project } = defineProps({
+	project: {
+		type: Object,
+		default() {},
+	},
+});
+
+const cardContainer = ref(null);
+const { elementX, elementY, isOutside } = useMouseInElement(cardContainer);
+
+const getBackgrounds = index => {
+	const backgroundTints = [
+		'!bg-darkred-100',
+		'!bg-darkred-200',
+		'!bg-darkred-300',
+		'!bg-darkred-400',
+		'!bg-darkred-500',
+	];
+
+	const backgroundClasses = {};
+	for (const tint of backgroundTints) {
+		backgroundClasses[tint] = index % backgroundTints.length === backgroundTints.indexOf(tint);
+	}
+
+	return backgroundClasses;
+};
+</script>
+
+<template>
+  <BorderGradientHover
+    ref="cardContainer"
+    :x="elementX"
+    :y="elementY"
+  >
+    <BackgroundGradientHover
+      :x="elementX"
+      :y="elementY"
+      :is-outside="isOutside"
+    >
+      <UCard
+        :ui="{ base: 'h-full', background: 'dark:bg-gradient-to-br to-gray-900 from-gray-800', body: {base: 'flex flex-col h-full'}, ring: 'ring-0' }"
+      >
+        <h3 class="text-2xl after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24">
+          {{ project.title }}
+        </h3>
+
+        <p class="my-5 text-gray-300" v-html="project.summary" />
+
+        <div class="mt-auto">
+          <UBadge
+            v-for="(skill, index) in project.skills"
+            :key="index"
+            :ui="{ base: 'm-1', font: '!text-[initial] font-light', rounded: 'rounded-none' }"
+            :class="getBackgrounds(index)"
+          >
+            {{ skill.label }}
+          </UBadge>
+        </div>
+      </UCard>
+    </BackgroundGradientHover>
+  </BorderGradientHover>
+</template>
+
+<style scoped>
+</style>
