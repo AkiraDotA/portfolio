@@ -14,6 +14,8 @@ const props = defineProps({
 	},
 });
 const { x, y } = toRefs(props);
+
+const { isMobileOrTablet } = useDevice();
 </script>
 
 <template>
@@ -22,6 +24,7 @@ const { x, y } = toRefs(props);
       <slot />
     </div>
     <div
+      v-if="!isMobileOrTablet"
       v-show="x || y"
       class="absolute translate-y-[-50%] translate-x-[-50%] pointer-events-none w-[450px] h-[450px] bg-[radial-gradient(circle_closest-side,var(--tw-gradient-stops))] from-darkred-400"
       :class="radialGradientClasses"
