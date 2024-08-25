@@ -9,22 +9,14 @@ const { project } = defineProps({
 const cardContainer = ref(null);
 const { elementX, elementY, isOutside } = useMouseInElement(cardContainer);
 
-const getBackgrounds = index => {
-	const backgroundTints = [
-		'!bg-darkred-100',
-		'!bg-darkred-200',
-		'!bg-darkred-300',
-		'!bg-darkred-400',
-		'!bg-darkred-500',
-	];
-
-	const backgroundClasses = {};
-	for (const tint of backgroundTints) {
-		backgroundClasses[tint] = index % backgroundTints.length === backgroundTints.indexOf(tint);
-	}
-
-	return backgroundClasses;
-};
+const backgroundTints = [
+	'!bg-darkred-100',
+	'!bg-darkred-200',
+	'!bg-darkred-300',
+	'!bg-darkred-400',
+	'!bg-darkred-500',
+];
+const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
 </script>
 
 <template>
@@ -52,7 +44,7 @@ const getBackgrounds = index => {
             v-for="(skill, index) in project.skills"
             :key="index"
             :ui="{ base: 'm-1', font: '!text-[initial] font-light', rounded: 'rounded-none' }"
-            :class="getBackgrounds(index)"
+            :class="getLoopingTint(index)"
           >
             {{ skill.label }}
           </UBadge>

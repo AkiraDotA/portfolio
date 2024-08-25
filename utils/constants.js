@@ -1,3 +1,26 @@
+export const NAVIGATION = [
+	{
+		label: 'Home',
+		route: '/',
+	},
+	{
+		label: 'Skills',
+		route: '/skills',
+	},
+	{
+		label: 'Projects',
+		route: '/projects',
+	},
+	{
+		label: 'Resume',
+		route: '/resume',
+	},
+	{
+		label: 'Contact',
+		route: '/contact',
+	},
+];
+
 export const SKILL_CATEGORIES = [
 	{
 		category: 'Frontend',
