@@ -9,5 +9,23 @@ export default defineAppConfig({
 		notifications: {
 			position: 'top-0 bottom-auto',
 		},
+		badge: {
+			rounded: 'rounded-none',
+		},
+		button: {
+			rounded: 'rounded-none',
+		},
+		select: {
+			rounded: 'rounded-none',
+		},
+		selectMenu: {
+			rounded: 'rounded-none',
+		},
+		input: {
+			rounded: 'rounded-none',
+		},
+		textarea: {
+			rounded: 'rounded-none',
+		},
 	},
 });

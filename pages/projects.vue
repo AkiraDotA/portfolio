@@ -45,14 +45,6 @@ const clearSelectedSkills = () => {
     <SectionTitle>Projects</SectionTitle>
 
     <div class="flex justify-end">
-      <UButton
-        v-if="selectedSkills.length"
-        icon="i-mdi-close"
-        color="white"
-        class="rounded-e-none px-2"
-        title="Clear selected skills"
-        @click="clearSelectedSkills"
-      />
       <USelectMenu
         v-model="selectedSkills"
         :options="relevantSkills"
@@ -63,8 +55,7 @@ const clearSelectedSkills = () => {
         clear-search-on-close
         placeholder="Filter projects by skills"
         size="lg"
-        class="w-full lg:max-w-[256px]"
-        :ui="{ rounded: selectedSkills.length ? 'rounded-s-none' : 'rounded-md' }"
+        class="w-full"
       >
         <template #label>
           <span v-if="selectedSkills.length" class="truncate">({{ selectedSkills.length }}) {{ selectedSkills.join(', ') }}</span>
@@ -78,6 +69,14 @@ const clearSelectedSkills = () => {
           <span class="truncate">{{ skill.label }}</span>
         </template>
       </USelectMenu>
+      <UButton
+        v-if="selectedSkills.length"
+        icon="i-mdi-close"
+        color="white"
+        class="px-2"
+        title="Clear selected skills"
+        @click="clearSelectedSkills"
+      />
     </div>
     <ProjectGrid
       v-for="(projectCategory, gridIndex) in filteredProjects"

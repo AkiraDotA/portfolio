@@ -175,7 +175,7 @@ const submitForm = async () => {
         type="submit"
         color="darkred"
         size="lg"
-        class="!text-gray-300"
+        class="flex !text-gray-300 ms-auto duration-300"
       >
         Submit
       </UButton>
