@@ -6,5 +6,8 @@ export default defineAppConfig({
 			background: 'bg-white dark:bg-gradient-to-br from-gray-900 to-gray-800',
 			rounded: 'rounded-none',
 		},
+		notifications: {
+			position: 'top-0 bottom-auto',
+		},
 	},
 });

@@ -50,5 +50,11 @@ export default defineNuxtConfig({
 	ui: {
 		icons: ['mdi', 'simple-icons', 'hugeicons'],
 	},
+	runtimeConfig: {
+		public: {
+			recaptchaSiteKey: process.env.NUXT_RECAPTCHA_SITE_KEY,
+		},
+		recaptchaSecretKey: process.env.NUXT_RECAPTCHA_SECRET_KEY,
+	},
 	compatibilityDate: '2024-08-25',
 });

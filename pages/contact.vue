@@ -1,4 +1,6 @@
 <script setup>
+import { useReCaptcha } from 'vue-recaptcha-v3';
+
 const contactFormData = reactive({
 	name: null,
 	email: null,
@@ -35,8 +37,37 @@ const validateForm = () => {
 	return errors;
 };
 
-const form = ref(null);
+const { recaptchaLoaded, executeRecaptcha } = useReCaptcha();
+const recaptcha = async () => {
+	await recaptchaLoaded();
+	return executeRecaptcha('submit-contact');
+};
+
+const toast = useToast();
 const submitForm = async () => {
+	const token = await recaptcha();
+
+	const result = await $fetch('/api/validate-recaptcha', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: { token },
+	});
+
+	if (!result) {
+		toast.add({
+			id: 'contact-recaptcha-failed',
+			title: 'Failed to Send Message',
+			description: 'Please try again later.',
+			color: 'red',
+			icon: 'i-mdi-alert-circle',
+			timeout: 5000,
+		});
+		clearForm();
+		return;
+	}
+
 	const mail = useMail();
 	mail.send({
 		from: `${contactFormData.name} [${contactFormData.email}] via Contact Form <${contactFormData.email}>`,
@@ -44,6 +75,14 @@ const submitForm = async () => {
 		text: contactFormData.message,
 	});
 
+	toast.add({
+		id: 'contact-message-sent',
+		title: 'Message Sent',
+		description: 'Your message has been sent successfully. I will get back to you at my earliest convenience.',
+		color: 'green',
+		icon: 'i-mdi-check-circle',
+		timeout: 7500,
+	});
 	clearForm();
 };
 </script>
@@ -52,7 +91,6 @@ const submitForm = async () => {
   <div>
     <SectionTitle>Contact</SectionTitle>
     <UForm
-      ref="form"
       class="space-y-6"
       :state="contactFormData"
       :validate="validateForm"
@@ -73,6 +111,7 @@ const submitForm = async () => {
           required
         />
       </UFormGroup>
+
       <UFormGroup
         label="Your Email"
         name="email"
@@ -88,6 +127,7 @@ const submitForm = async () => {
           required
         />
       </UFormGroup>
+
       <UFormGroup
         label="Subject"
         name="subject"
@@ -99,6 +139,7 @@ const submitForm = async () => {
           size="lg"
         />
       </UFormGroup>
+
       <UFormGroup
         label="Message"
         name="message"
@@ -109,12 +150,26 @@ const submitForm = async () => {
           v-model.trim="contactFormData.message"
           placeholder="Hello, I would like to discuss..."
           size="lg"
-          :rows="4"
+          :rows="5"
           autoresize
-          :maxrows="8"
+          :maxrows="10"
           required
         />
       </UFormGroup>
+
+      <div class="text-gray-500 text-xs !mt-2">
+        This site is protected by reCAPTCHA and the Google
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          class="text-darkred hover:underline"
+        >Privacy Policy</a> and
+        <a
+          href="https://policies.google.com/terms"
+          target="_blank"
+          class="text-darkred hover:underline"
+        >Terms of Service</a> apply.
+      </div>
 
       <UButton
         type="submit"
