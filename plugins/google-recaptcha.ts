@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { VueReCaptcha } from 'vue-recaptcha-v3';
 
 export default defineNuxtPlugin(nuxtApp => {

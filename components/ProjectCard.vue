@@ -33,9 +33,9 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
       <UCard
         :ui="{ base: 'h-full', background: 'dark:bg-gradient-to-br to-gray-900 from-gray-800', body: {base: 'flex flex-col h-full'}, ring: 'ring-0' }"
       >
-        <h3 class="text-2xl after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24">
+        <h4 class="text-2xl after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24">
           {{ project.title }}
-        </h3>
+        </h4>
 
         <p class="my-5 text-gray-300" v-html="project.summary" />
 

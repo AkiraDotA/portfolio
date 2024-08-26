@@ -90,6 +90,20 @@ const submitForm = async () => {
 <template>
   <div>
     <SectionTitle>Contact</SectionTitle>
+
+    <div
+      class="border-gray-700 border-2 my-8"
+      role="presentation"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762032.1517892706!2d-88.59300068467155!3d41.74882010539418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e444c8c99e083%3A0xda7b840a9a579334!2sChicago%20Metropolitan%20Area!5e0!3m2!1sen!2sus!4v1724714568712!5m2!1sen!2sus"
+        class="grayscale dark:invert w-full h-80 max-sm:h-64"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        tabindex="-1"
+      />
+    </div>
+
     <UForm
       class="space-y-6"
       :state="contactFormData"
