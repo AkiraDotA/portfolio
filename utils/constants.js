@@ -11,10 +11,10 @@ export const NAVIGATION = [
 		label: 'Projects',
 		route: '/projects',
 	},
-	{
-		label: 'Resume',
-		route: '/resume',
-	},
+	// { Disabled for now
+	// 	label: 'Resume',
+	// 	route: '/resume',
+	// },
 	{
 		label: 'Contact',
 		route: '/contact',
