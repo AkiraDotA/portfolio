@@ -33,6 +33,8 @@ export const SKILL_CATEGORIES = [
 			vue: { label: 'Vue 2 & 3', icon: 'vuedotjs' },
 			nuxt: { label: 'Nuxt 3', icon: 'nuxtdotjs' },
 			jquery: { label: 'jQuery', icon: 'jquery' },
+			officejs: { label: 'Office.js', icon: 'office-365', iconCollection: 'hugeicons' },
+			javafx: { label: 'JavaFX', icon: 'java', iconCollection: 'hugeicons' },
 			bootstrap: { label: 'Bootstrap', icon: 'bootstrap' },
 			tailwind: { label: 'Tailwind CSS', icon: 'tailwindcss' },
 		},
@@ -56,13 +58,6 @@ export const SKILL_CATEGORIES = [
 		},
 	},
 	{
-		category: 'Additional Technologies',
-		skills: {
-			officejs: { label: 'Office.js', icon: 'office-365', iconCollection: 'hugeicons' },
-			javafx: { label: 'JavaFX', icon: 'java', iconCollection: 'hugeicons' },
-		},
-	},
-	{
 		category: 'IDEs and Tools',
 		skills: {
 			jetbrains: { label: 'JetBrains IDEs', icon: 'jetbrains' },
@@ -76,7 +71,7 @@ export const SKILL_CATEGORIES = [
 	},
 ];
 
-const [frontend, backend, databases, additional] = SKILL_CATEGORIES;
+const [frontend, backend, databases] = SKILL_CATEGORIES;
 const vue2Skill = { ...frontend.skills.vue, label: 'Vue 2' };
 const vue3Skill = { ...frontend.skills.vue, label: 'Vue 3' };
 export const PROJECT_CATEGORIES = [
@@ -96,12 +91,12 @@ export const PROJECT_CATEGORIES = [
 			{
 				title: 'Question Builder Excel Add-in',
 				summary: 'Created an <strong>accounting question builder Excel add-in</strong> that granted the ability to tag and format Excel worksheets in such a way that would allow them to be parsed and converted into HTML output that could be used in the creation of Moodle cloze questions. Also developed new functionality in the question builder to allow the possibility to convert the entire Excel workbook into an Excel file format to be used in tandem with the <strong>accounting question taker Excel add-in</strong>.',
-				skills: [frontend.skills.javascript, additional.skills.officejs],
+				skills: [frontend.skills.javascript, frontend.skills.officejs],
 			},
 			{
 				title: 'Question Taking Excel Add-in',
 				summary: 'Created an <strong>accounting question taker Excel add-in</strong> that allowed users to work on accounting questions Excel files created by the <strong>account question builder Excel add-in</strong>. Answers entered by a user would get parsed and checked by an advanced algorithm to properly account for all possible and equivalent answers to ensure users would be able to take advantage of Excel’s formula feature for their answers.',
-				skills: [frontend.skills.javascript, additional.skills.officejs],
+				skills: [frontend.skills.javascript, frontend.skills.officejs],
 			},
 			{
 				title: 'Course Widget Grid',
@@ -126,7 +121,7 @@ export const PROJECT_CATEGORIES = [
 			{
 				title: 'Test Bank Converter',
 				summary: 'Created and maintained a robust desktop application designed to convert imported test banks into an intermediate format for cloud storage and seamless export to various file formats as needed.',
-				skills: [backend.skills.java, additional.skills.javafx],
+				skills: [backend.skills.java, frontend.skills.javafx],
 			},
 		],
 	},
@@ -141,12 +136,12 @@ export const PROJECT_CATEGORIES = [
 			{
 				title: 'Timesheet Generator',
 				summary: 'Developed a desktop application to generate timesheet text output from defined work schedules, enabling the easy creation of formatted Excel timesheets for accurate hour tracking during each pay period.',
-				skills: [backend.skills.java, additional.skills.javafx],
+				skills: [backend.skills.java, frontend.skills.javafx],
 			},
 			{
 				title: 'Diploma File Formatter',
 				summary: 'Developed a desktop application for importing unformatted Word test bank documents, formatting them, and exporting to RTF files that match the standard Diploma test bank file format for test bank conversion.',
-				skills: [backend.skills.java, additional.skills.javafx],
+				skills: [backend.skills.java, frontend.skills.javafx],
 			},
 		],
 	},
@@ -171,7 +166,7 @@ export const PROJECT_CATEGORIES = [
 			{
 				title: 'Volunteer Database System',
 				summary: 'Designed and implemented a database system to streamline volunteer management processes including registration, tracking volunteer hours, and generating detailed reports for analysis.',
-				skills: [backend.skills.java, additional.skills.javafx, databases.skills.mysql],
+				skills: [backend.skills.java, frontend.skills.javafx, databases.skills.mysql],
 			},
 			{
 				title: 'Farkle Web Game',
