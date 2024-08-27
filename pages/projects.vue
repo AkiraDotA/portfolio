@@ -1,4 +1,8 @@
 <script setup>
+useHead({
+	title: 'Projects',
+});
+
 const relevantSkills = computed(() => {
 	const relevantSkills = [];
 	PROJECT_CATEGORIES.forEach(category => {

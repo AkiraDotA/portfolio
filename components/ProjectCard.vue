@@ -51,7 +51,7 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
           <UBadge
             v-for="(skill, index) in project.skills"
             :key="index"
-            :ui="{ base: 'm-1', font: '!text-[initial] font-light' }"
+            :ui="{ base: 'm-1', font: '!text-white font-light' }"
             :class="getLoopingTint(index)"
           >
             {{ skill.label }}

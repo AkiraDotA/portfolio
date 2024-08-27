@@ -1,10 +1,22 @@
 <script setup>
+const currentTitle = ref('');
+useHead({
+	titleTemplate(pageTitle) {
+		currentTitle.value = pageTitle ? `${pageTitle} | Zac Holly` : 'Zac Holly';
+		return currentTitle.value;
+	},
+});
 </script>
 
 <template>
   <div class="font-poppins max-w-screen-2xl mx-auto">
     <NuxtLayout>
-      <NuxtPage />
+      <main>
+        <h1 class="sr-only">
+          {{ currentTitle }}
+        </h1>
+        <NuxtPage />
+      </main>
     </NuxtLayout>
 
     <UNotifications />

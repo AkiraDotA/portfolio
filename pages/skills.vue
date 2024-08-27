@@ -1,4 +1,7 @@
 <script setup>
+useHead({
+	title: 'Skills',
+});
 </script>
 
 <template>

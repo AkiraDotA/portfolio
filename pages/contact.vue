@@ -1,6 +1,10 @@
 <script setup>
 import { useReCaptcha } from 'vue-recaptcha-v3';
 
+useHead({
+	title: 'Contact Me',
+});
+
 const contactFormData = reactive({
 	name: null,
 	email: null,
@@ -92,7 +96,7 @@ const submitForm = async () => {
 
 <template>
   <div>
-    <SectionTitle>Contact</SectionTitle>
+    <SectionTitle>Contact Me</SectionTitle>
 
     <div
       class="border-gray-700 border-2 my-8"
