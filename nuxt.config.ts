@@ -3,6 +3,7 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: [
+		'@nuxtjs/color-mode',
 		'@nuxtjs/eslint-module',
 		'@nuxt/ui',
 		'@nuxtjs/device',
@@ -32,6 +33,10 @@ export default defineNuxtConfig({
 	devServer: {
 		host: 'localhost',
 		port: 3030,
+	},
+	colorMode: {
+		preference: 'dark',
+		classSuffix: '',
 	},
 	app: {
 		head: {
