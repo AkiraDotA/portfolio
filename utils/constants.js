@@ -79,14 +79,19 @@ export const PROJECT_CATEGORIES = [
 		category: 'Work Projects',
 		projects: [
 			{
+				title: 'Company & Product Marketing Landers',
+				summary: 'Implemented modern marketing landers from initial wireframes, showcasing the company and primary product with updated visuals. The landers include details such as user statistics, included features, and user quotes.',
+				skills: [frontend.skills.javascript, vue3Skill, frontend.skills.nuxt, frontend.skills.scss, frontend.skills.bootstrap],
+			},
+			{
 				title: 'Marketing Site',
 				summary: 'Revamping a legacy PHP marketing site with an in-progress Nuxt 3 project. Adapted and customized a Nuxt 3 template to meet specific requirements, developing pages including login, catalog, book, cart, checkout, resource request forms, policy pages, and enrollment paths.',
 				skills: [frontend.skills.javascript, vue3Skill, frontend.skills.nuxt, frontend.skills.scss, frontend.skills.bootstrap],
 			},
 			{
-				title: 'Company & Product Marketing Landers',
-				summary: 'Implemented modern marketing landers from initial wireframes, showcasing the company and primary product with updated visuals. The landers include details such as user statistics, included features, and user quotes.',
-				skills: [frontend.skills.javascript, vue3Skill, frontend.skills.nuxt, frontend.skills.scss, frontend.skills.bootstrap],
+				title: 'Central PHP System',
+				summary: 'Continuously maintaining and extending a PHP-based application that serves as the core of the digital ecosystem, powering the marketing site, admin dashboard, proprietary CMS, e-commerce platform, and LMS. Enhanced the system by integrating Vue.js applications and managing the MVC architecture, libraries, and REST API, ensuring a cohesive framework for development and integration across the platform.',
+				skills: [backend.skills.php, backend.skills.codeigniter, frontend.skills.javascript, frontend.skills.jquery, databases.skills.mysql],
 			},
 			{
 				title: 'Question Builder Excel Add-in',
