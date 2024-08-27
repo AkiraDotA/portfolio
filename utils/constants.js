@@ -1,6 +1,6 @@
 export const NAVIGATION = [
 	{
-		label: 'Home',
+		label: 'About',
 		route: '/',
 	},
 	{
@@ -180,4 +180,20 @@ export const PROJECT_CATEGORIES = [
 			},
 		],
 	},
+];
+
+export const MAIN_SKILLS = [
+	frontend.skills.javascript,
+	frontend.skills.vue,
+	frontend.skills.nuxt,
+	backend.skills.php,
+	backend.skills.codeigniter,
+	databases.skills.mysql,
+];
+
+export const HIGHLIGHTED_PROJECTS = [
+	PROJECT_CATEGORIES[0].projects[1], // Marketing Site
+	PROJECT_CATEGORIES[0].projects[2], // Central PHP System
+	PROJECT_CATEGORIES[0].projects[4], // Question Taker Excel Add-in
+	PROJECT_CATEGORIES[0].projects[5], // Course Widget Grid
 ];

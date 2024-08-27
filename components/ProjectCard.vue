@@ -4,6 +4,10 @@ const { project } = defineProps({
 		type: Object,
 		default() {},
 	},
+	minimal: {
+		type: Boolean,
+		default: false,
+	},
 });
 
 const cardContainer = ref(null);
@@ -31,15 +35,19 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
       :is-outside="isOutside"
     >
       <UCard
-        :ui="{ base: 'h-full', background: 'dark:bg-gradient-to-br to-gray-900 from-gray-800', body: {base: 'flex flex-col h-full'}, ring: 'ring-0' }"
+        :ui="{ base: 'h-full', background: 'dark:bg-gradient-to-br to-gray-900 from-gray-800', body: {base: 'flex flex-col h-full' }, ring: 'ring-0' }"
       >
-        <h4 class="text-2xl after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24">
+        <h4 class="after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
           {{ project.title }}
         </h4>
 
-        <p class="my-5 text-gray-300" v-html="project.summary" />
+        <p
+          v-if="!minimal"
+          class="my-5 text-gray-300"
+          v-html="project.summary"
+        />
 
-        <div class="mt-auto">
+        <div class="mt-auto" :class="{'pt-6': minimal}">
           <UBadge
             v-for="(skill, index) in project.skills"
             :key="index"
