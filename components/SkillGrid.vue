@@ -8,14 +8,13 @@ const { skillCategory } = defineProps({
 </script>
 
 <template>
-  <h3 v-if="skillCategory.category" class="text-xl py-0.5 bg-gradient-to-r from-darkred-200 mt-8 mb-4 ps-4 xl:w-1/3 md:w-1/2 sm:w-3/4 w-11/12 transition-all duration-300">
+  <SubsectionTitle v-if="skillCategory.category">
     {{ skillCategory.category }}
-  </h3>
+  </SubsectionTitle>
   <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
     <slot />
   </div>
 </template>
 
 <style scoped>
-
 </style>
