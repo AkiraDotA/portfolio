@@ -55,6 +55,7 @@ const clearSelectedSkills = () => {
         clear-search-on-close
         placeholder="Filter projects by skills"
         size="lg"
+        icon="i-mdi-filter-outline"
         class="w-full"
       >
         <template #label>

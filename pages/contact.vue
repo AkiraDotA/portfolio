@@ -8,11 +8,13 @@ const contactFormData = reactive({
 	message: null,
 });
 
+const submissionLoading = ref(false);
 const clearForm = () => {
 	contactFormData.name = null;
 	contactFormData.email = null;
 	contactFormData.subject = null;
 	contactFormData.message = null;
+	submissionLoading.value = false;
 };
 
 const validateForm = () => {
@@ -45,8 +47,9 @@ const recaptcha = async () => {
 
 const toast = useToast();
 const submitForm = async () => {
-	const token = await recaptcha();
+	submissionLoading.value = true;
 
+	const token = await recaptcha();
 	const result = await $fetch('/api/validate-recaptcha', {
 		method: 'POST',
 		headers: {
@@ -189,7 +192,8 @@ const submitForm = async () => {
         type="submit"
         color="darkred"
         size="lg"
-        class="flex !text-gray-300 ms-auto duration-300"
+        icon="i-mdi-send-outline"
+        class="flex !text-gray-300 ms-auto duration-300 max-sm:w-full justify-center"
       >
         Submit
       </UButton>
