@@ -4,8 +4,13 @@ module.exports = {
 		es2021: true,
 	},
 	extends: [
-		'xo',
 		'plugin:vue/vue3-essential',
+		'xo',
+		'@nuxt/eslint-config',
+		'plugin:nuxt/recommended',
+	],
+	ignorePatterns: [
+		'*.min.js',
 	],
 	overrides: [
 		{
@@ -28,5 +33,11 @@ module.exports = {
 		'vue',
 	],
 	rules: {
+		'vue/max-attributes-per-line': ['error', {
+			singleline: 2,
+			multiline: 1,
+		}],
+		'object-curly-spacing': ['error', 'always'],
+		'vue/no-v-html': 0,
 	},
 };

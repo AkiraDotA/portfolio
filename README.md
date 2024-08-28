@@ -1,63 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Personal Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal portfolio website, created to showcase my software engineering skills and projects. It highlights the work I've done over the years and serves as a central hub for my professional presence online.
 
-## Setup
+## Features
 
-Make sure to install the dependencies:
+- **Responsive Design**: Fully responsive layout that adapts seamlessly to various screen sizes.
+- **Accessibility**: Built with accessibility in mind to ensure a great experience for all users.
+- **Skills Showcase**: A comprehensive list of my technical skills.
+- **Project List**: A detailed showcase of my key projects.
+- **Contact Page**: A secure contact form for reaching out to me.
 
-```bash
-# npm
-npm install
+## Technologies Used
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **JavaScript**
+- **Vue 3**
+- **Nuxt 3**
+- **Tailwind CSS**
