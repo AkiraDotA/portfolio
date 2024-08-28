@@ -46,7 +46,7 @@ const validateForm = () => {
 const { recaptchaLoaded, executeRecaptcha } = useReCaptcha();
 const recaptcha = async () => {
 	await recaptchaLoaded();
-	return executeRecaptcha('submit-contact');
+	return executeRecaptcha('contact');
 };
 
 const toast = useToast();
