@@ -39,11 +39,18 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'en',
 			},
+			bodyAttrs: {
+				class: 'bg-waveblack',
+			},
 			link: [
 				{
 					rel: 'stylesheet',
 					href: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap',
 				},
+			],
+			script: [
+				{ src: '/js/three.r134.min.js' },
+				{ src: '/js/vanta.waves.min.js' },
 			],
 		},
 		pageTransition: {

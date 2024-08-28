@@ -15,6 +15,9 @@ module.exports = {
 					500: '#4D0F0F',
 					600: '#3D0D0D',
 				},
+				waveblack: {
+					DEFAULT: '#121212',
+				},
 			},
 			animation: {
 				rotate: 'rotate 4s linear infinite',

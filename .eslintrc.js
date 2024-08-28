@@ -9,6 +9,9 @@ module.exports = {
 		'@nuxt/eslint-config',
 		'plugin:nuxt/recommended',
 	],
+	ignorePatterns: [
+		'*.min.js',
+	],
 	overrides: [
 		{
 			env: {
