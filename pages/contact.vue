@@ -54,15 +54,35 @@ const submitForm = async () => {
 	submissionLoading.value = true;
 
 	const token = await recaptcha();
-	const result = await $fetch('/api/validate-recaptcha', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: { token },
-	});
+	const mailData = {
+		from: `${contactFormData.name} [${contactFormData.email}] via Contact Form <${contactFormData.email}>`,
+		subject: contactFormData.subject || 'Website Contact',
+		text: contactFormData.message,
+		token,
+	};
 
-	if (!result) {
+	try {
+		const result = await $fetch('/api/send-mail', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: mailData,
+		});
+
+		if (!result) {
+			throw new Error('Failed to send message');
+		}
+
+		toast.add({
+			id: 'contact-message-sent',
+			title: 'Message Sent',
+			description: 'Your message has been sent successfully. I will get back to you at my earliest convenience.',
+			color: 'green',
+			icon: 'i-mdi-check-circle',
+			timeout: 7500,
+		});
+	} catch (error) {
 		toast.add({
 			id: 'contact-recaptcha-failed',
 			title: 'Failed to Send Message',
@@ -71,26 +91,9 @@ const submitForm = async () => {
 			icon: 'i-mdi-alert-circle',
 			timeout: 5000,
 		});
+	} finally {
 		clearForm();
-		return;
 	}
-
-	const mail = useMail();
-	mail.send({
-		from: `${contactFormData.name} [${contactFormData.email}] via Contact Form <${contactFormData.email}>`,
-		subject: contactFormData.subject || 'Website Contact',
-		text: contactFormData.message,
-	});
-
-	toast.add({
-		id: 'contact-message-sent',
-		title: 'Message Sent',
-		description: 'Your message has been sent successfully. I will get back to you at my earliest convenience.',
-		color: 'green',
-		icon: 'i-mdi-check-circle',
-		timeout: 7500,
-	});
-	clearForm();
 };
 </script>
 
@@ -198,6 +201,7 @@ const submitForm = async () => {
         size="lg"
         icon="i-mdi-send-outline"
         class="flex !text-gray-300 ms-auto duration-300 max-sm:w-full justify-center"
+        :loading="submissionLoading"
       >
         Submit
       </UButton>

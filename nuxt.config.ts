@@ -7,20 +7,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/eslint-module',
 		'@nuxt/ui',
 		'@nuxtjs/device',
-		['nuxt-mail', {
-			message: {
-				to: process.env.NUXT_MAIL_USERNAME,
-			},
-			smtp: {
-				host: process.env.NUXT_MAIL_SMPT,
-				port: process.env.NUXT_MAIL_PORT,
-				secure: true,
-				auth: {
-					user: process.env.NUXT_MAIL_USERNAME,
-					pass: process.env.NUXT_MAIL_PASSWORD,
-				},
-			},
-		}],
+		'nuxt-nodemailer',
 	],
 	imports: {
 		presets: [
@@ -37,6 +24,15 @@ export default defineNuxtConfig({
 	colorMode: {
 		preference: 'dark',
 		classSuffix: '',
+	},
+	nodemailer: {
+		host: process.env.NUXT_MAIL_SMPT,
+		port: process.env.NUXT_MAIL_PORT,
+		secure: true,
+		auth: {
+			user: process.env.NUXT_MAIL_USERNAME,
+			pass: process.env.NUXT_MAIL_PASSWORD,
+		},
 	},
 	app: {
 		head: {
@@ -63,6 +59,7 @@ export default defineNuxtConfig({
 			recaptchaSiteKey: process.env.NUXT_RECAPTCHA_SITE_KEY,
 		},
 		recaptchaSecretKey: process.env.NUXT_RECAPTCHA_SECRET_KEY,
+		mailUsername: process.env.NUXT_MAIL_USERNAME,
 	},
 	compatibilityDate: '2024-08-25',
 });
