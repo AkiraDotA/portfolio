@@ -7,6 +7,12 @@ useHead({
 	},
 });
 
+useSeoMeta({
+	ogSiteName: 'Zac Holly - Portfolio',
+	ogUrl: 'https://www.zacholly.net',
+	ogImage: 'https://www.zacholly.net/_nuxt/profile.BR-H94gZ.png',
+});
+
 const { isMobileOrTablet } = useDevice();
 onMounted(() => {
 	if (isMobileOrTablet) {
