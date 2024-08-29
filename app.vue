@@ -1,13 +1,10 @@
 <script setup>
 const currentTitle = ref('');
-useHead({
+useSeoMeta({
 	titleTemplate(pageTitle) {
 		currentTitle.value = pageTitle ? `${pageTitle} | Zac Holly` : 'Zac Holly';
 		return currentTitle.value;
 	},
-});
-
-useSeoMeta({
 	ogSiteName: 'Zac Holly - Portfolio',
 	ogUrl: 'https://www.zacholly.net',
 	ogImage: 'https://www.zacholly.net/_nuxt/profile.BR-H94gZ.png',
@@ -19,6 +16,7 @@ onMounted(() => {
 		return;
 	}
 
+	// eslint-disable-next-line new-cap
 	VANTA.WAVES({
 		el: '#vanta-background',
 		mouseControls: false,

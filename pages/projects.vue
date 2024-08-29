@@ -1,6 +1,7 @@
 <script setup>
 useSeoMeta({
 	title: 'Projects',
+	ogTitle: 'Projects | Zac Holly',
 	ogDescription: 'Zac Holly\'s projects include Vue 2 & 3 applications, Excel add-ins, and more. View his full list of projects here.',
 	description: 'Zac Holly\'s projects include Vue 2 & 3 applications, Excel add-ins, and more. View his full list of projects here.',
 });
