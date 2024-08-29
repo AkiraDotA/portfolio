@@ -3,6 +3,7 @@ import { useReCaptcha } from 'vue-recaptcha-v3';
 
 useSeoMeta({
 	title: 'Contact Me',
+	ogTitle: 'Contact Me | Zac Holly',
 	ogDescription: 'Contact Zac Holly for inquiries, general feedback, or simply to get in touch. Fill out the form on this page to send him a message.',
 	description: 'Contact Zac Holly for inquiries, general feedback, or simply to get in touch. Fill out the form on this page to send him a message.',
 });

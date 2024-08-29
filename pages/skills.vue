@@ -1,6 +1,7 @@
 <script setup>
 useSeoMeta({
 	title: 'Skills',
+	ogTitle: 'Skills | Zac Holly',
 	ogDescription: 'Zac Holly\'s skills include JavaScript, Vue.js, Nuxt 3, and more. View his full list of skills here.',
 	description: 'Zac Holly\'s skills include JavaScript, Vue.js, Nuxt 3, and more. View his full list of skills here.',
 });

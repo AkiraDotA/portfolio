@@ -1,6 +1,7 @@
 <script setup>
 useSeoMeta({
 	title: 'About Me',
+	ogTitle: 'About Me | Zac Holly',
 	ogDescription: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, and performant web applications.',
 	description: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, and performant web applications.',
 });
