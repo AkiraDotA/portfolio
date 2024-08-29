@@ -1,6 +1,8 @@
 <script setup>
-useHead({
+useSeoMeta({
 	title: 'Projects',
+	ogDescription: 'Zac Holly\'s projects include Vue 2 & 3 applications, Excel add-ins, and more. View his full list of projects here.',
+	description: 'Zac Holly\'s projects include Vue 2 & 3 applications, Excel add-ins, and more. View his full list of projects here.',
 });
 
 const relevantSkills = computed(() => {

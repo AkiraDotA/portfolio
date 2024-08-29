@@ -1,6 +1,8 @@
 <script setup>
-useHead({
+useSeoMeta({
 	title: 'Skills',
+	ogDescription: 'Zac Holly\'s skills include JavaScript, Vue.js, Nuxt 3, and more. View his full list of skills here.',
+	description: 'Zac Holly\'s skills include JavaScript, Vue.js, Nuxt 3, and more. View his full list of skills here.',
 });
 </script>
 

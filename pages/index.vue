@@ -1,7 +1,10 @@
 <script setup>
-useHead({
+useSeoMeta({
 	title: 'About Me',
+	ogDescription: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, performant web applications.',
+	description: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, and performant web applications.',
 });
+
 </script>
 
 <template>
@@ -9,9 +12,9 @@ useHead({
     <SectionTitle>About Me</SectionTitle>
 
     <p>
-      Software Engineer with expertise in JavaScript and Vue.js. Worked on projects including Excel add-ins,
-      numerous front-end Vue applications, and web accessibility auditing and improvements. Quick learner,
-      collaborative team player, and passionate about leveraging technology to solve difficult problems.
+      I'm a Software Engineer with expertise in JavaScript and Vue.js. I've worked on numerous projects,
+      including front-end Vue applications, Excel add-ins, web accessibility auditing and improvements, and many more.
+      I'm a quick learner, a collaborative team player, and passionate about leveraging technology to solve difficult problems.
     </p>
 
     <SubsectionTitle>

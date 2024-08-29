@@ -1,8 +1,10 @@
 <script setup>
 import { useReCaptcha } from 'vue-recaptcha-v3';
 
-useHead({
+useSeoMeta({
 	title: 'Contact Me',
+	ogDescription: 'Contact Zac Holly for inquiries, general feedback, or simply to get in touch. Fill out the form on this page to send him a message.',
+	description: 'Contact Zac Holly for inquiries, general feedback, or simply to get in touch. Fill out the form on this page to send him a message.',
 });
 
 const contactFormData = reactive({
