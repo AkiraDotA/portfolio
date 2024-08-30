@@ -11,10 +11,6 @@ export const NAVIGATION = [
 		label: 'Projects',
 		route: '/projects',
 	},
-	// { Disabled for now
-	// 	label: 'Resume',
-	// 	route: '/resume',
-	// },
 	{
 		label: 'Contact',
 		route: '/contact',
