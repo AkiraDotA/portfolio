@@ -11,10 +11,15 @@ useSeoMeta({
 });
 
 const { isMobileOrTablet } = useDevice();
+const showVanta = ref(true);
 onMounted(() => {
 	if (isMobileOrTablet) {
 		return;
 	}
+
+	window.addEventListener('beforeunload', () => {
+		showVanta.value = false;
+	});
 
 	// eslint-disable-next-line new-cap
 	VANTA.WAVES({
@@ -34,7 +39,11 @@ onMounted(() => {
 
 <template>
   <div class="font-poppins max-w-screen-2xl mx-auto">
-    <div id="vanta-background" class="w-full h-full fixed top-0 left-0 -z-10" />
+    <div
+      v-if="showVanta"
+      id="vanta-background"
+      class="w-full h-full fixed top-0 left-0 -z-10"
+    />
 
     <NuxtLayout>
       <main>
