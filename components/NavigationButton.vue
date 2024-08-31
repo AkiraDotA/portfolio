@@ -16,7 +16,7 @@ const route = useRoute();
 <template>
   <NuxtLink
     :to="to"
-    class="group block hover:bg-gray-800 transition duration-300 lg:text-lg sm:text-sm max-sm:text-xs max-sm:!bg-opacity-75 max-sm:border-opacity-75 max-sm:!backdrop-blur w-full lg:p-4 p-2 max-sm:py-3"
+    class="group block hover:bg-gray-800 transition duration-300 lg:text-lg sm:text-sm max-sm:text-xs w-full lg:p-4 p-2 max-sm:py-3"
   >
     <span
       :class="{'bg-[length:100%_2px]': route.path === to && !hideActive}"
