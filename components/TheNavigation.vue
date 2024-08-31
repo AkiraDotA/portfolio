@@ -19,6 +19,7 @@ const availableTints = [
         :key="index"
         :to="navItem.route"
         :class="availableTints[index + 1]"
+        class="max-sm:!bg-opacity-75 max-sm:!backdrop-blur"
       >
         {{ navItem.label }}
       </NavigationButton>
