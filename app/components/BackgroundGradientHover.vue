@@ -29,7 +29,7 @@ const { isMobileOrTablet } = useDevice();
     </div>
     <div
       v-if="!isMobileOrTablet && !isOutside"
-      class="absolute w-[300px] h-[300px] translate-y-[-50%] translate-x-[-50%] bg-[radial-gradient(circle_closest-side,var(--tw-gradient-stops))] from-darkred-400 opacity-20 pointer-events-none"
+      class="absolute size-75 translate-y-[-50%] translate-x-[-50%] bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-darkred)_20%,transparent),transparent)] pointer-events-none"
       :style="{top: `${y}px`, left: `${x}px`}"
     />
   </div>
