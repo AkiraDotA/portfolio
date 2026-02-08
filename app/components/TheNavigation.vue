@@ -11,21 +11,21 @@ const availableTints = [
 </script>
 
 <template>
-  <div class="max-sm:z-50 max-sm:fixed bottom-0 left-0 w-full">
-    <div class="nav-topper h-8 mt-6 max-lg:hidden" :class="availableTints[0]" />
-    <nav class="max-lg:flex">
-      <NavigationButton
-        v-for="(navItem, index) of NAVIGATION"
-        :key="index"
-        :to="navItem.route"
-        :class="availableTints[index + 1]"
-        class="max-sm:!bg-opacity-75 max-sm:!backdrop-blur"
-      >
-        {{ navItem.label }}
-      </NavigationButton>
-    </nav>
-    <div class="nav-ender h-8 mb-6 max-lg:hidden" :class="availableTints[NAVIGATION.length + 1] ?? 'bg-darkred-600'" />
-  </div>
+	<div class="max-sm:z-50 max-sm:fixed bottom-0 left-0 w-full">
+		<div class="nav-topper h-8 mt-6 max-lg:hidden" :class="availableTints[0]" />
+		<nav class="max-lg:flex">
+			<NavigationButton
+				v-for="(navItem, index) of NAVIGATION"
+				:key="index"
+				:to="navItem.route"
+				:class="availableTints[index + 1]"
+				class="max-sm:!bg-opacity-75 max-sm:!backdrop-blur"
+			>
+				{{ navItem.label }}
+			</NavigationButton>
+		</nav>
+		<div class="nav-ender h-8 mb-6 max-lg:hidden" :class="availableTints[NAVIGATION.length + 1] ?? 'bg-darkred-600'" />
+	</div>
 </template>
 
 <style scoped>

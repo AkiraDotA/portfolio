@@ -1,4 +1,4 @@
-export default defineEventHandler(async event => {
+export default defineEventHandler(async (event) => {
 	const { from, subject, text, token } = await readBody(event);
 
 	const result = await validateRecaptcha(token);

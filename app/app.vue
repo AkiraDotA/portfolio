@@ -21,7 +21,6 @@ onMounted(() => {
 		showVanta.value = false;
 	});
 
-
 	VANTA.WAVES({
 		el: '#vanta-background',
 		mouseControls: false,
@@ -38,24 +37,24 @@ onMounted(() => {
 </script>
 
 <template>
-  <UApp>
-  <div class="font-poppins max-w-screen-2xl mx-auto">
-    <div
-      v-if="showVanta"
-      id="vanta-background"
-      class="w-full h-full fixed top-0 left-0 -z-10"
-    />
+	<UApp>
+		<div class="font-poppins max-w-screen-2xl mx-auto">
+			<div
+				v-if="showVanta"
+				id="vanta-background"
+				class="w-full h-full fixed top-0 left-0 -z-10"
+			/>
 
-    <NuxtLayout>
-      <main>
-        <h1 class="sr-only">
-          {{ currentTitle }}
-        </h1>
-        <NuxtPage />
-      </main>
-    </NuxtLayout>
-  </div>
-  </UApp>
+			<NuxtLayout>
+				<main>
+					<h1 class="sr-only">
+						{{ currentTitle }}
+					</h1>
+					<NuxtPage />
+				</main>
+			</NuxtLayout>
+		</div>
+	</UApp>
 </template>
 
 <style>
