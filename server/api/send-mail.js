@@ -3,13 +3,7 @@
 export default defineEventHandler(async event => {
 	const { from, subject, text, token } = await readBody(event);
 
-	const result = await $fetch('/api/validate-recaptcha', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: { token },
-	});
+	const result = await validateRecaptcha(token);
 
 	if (!result) {
 		return new Response('Invalid token', { status: 400 });

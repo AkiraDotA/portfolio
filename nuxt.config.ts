@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         classSuffix: '',
     },
     nodemailer: {
-        host: process.env.NUXT_MAIL_SMPT,
+        host: process.env.NUXT_MAIL_SMTP,
         port: Number(process.env.NUXT_MAIL_PORT),
         secure: true,
         auth: {
