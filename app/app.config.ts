@@ -31,12 +31,12 @@ export default defineAppConfig({
 		},
 		input: {
 			slots: {
-				root: '!rounded-none',
+				base: '!rounded-none',
 			},
 		},
 		textarea: {
 			slots: {
-				root: '!rounded-none',
+				base: '!rounded-none',
 			},
 		},
 	},
