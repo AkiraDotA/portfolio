@@ -19,7 +19,7 @@ const { isMobileOrTablet } = useDevice();
 </script>
 
 <template>
-  <div class="relative overflow-hidden transition duration-300 ease-out p-0.5 bg-gray-800 hover:bg-darkred-400">
+  <div class="relative overflow-hidden transition duration-300 ease-out p-0.5 bg-neutral-800 hover:bg-darkred-400">
     <div class="slotContainer h-full">
       <slot />
     </div>

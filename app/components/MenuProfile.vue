@@ -10,7 +10,7 @@
         class="animate-rotate absolute inset-0 bg-[conic-gradient(#991b1b_20deg,#4D0F0F_270deg)]"
       />
       <img
-        src="public/images/profile.png"
+        src="/images/profile.png"
         alt="Zac Holly"
         class="z-20"
       >
@@ -19,7 +19,8 @@
       Zac Holly
       <br class="lg:hidden">
       <UBadge
-        color="gray"
+        color="neutral"
+        variant="subtle"
         size="lg"
         class="mt-2"
       >

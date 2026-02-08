@@ -21,9 +21,7 @@ useSeoMeta({
     <SubsectionTitle>
       Main Skills
     </SubsectionTitle>
-    <UCard
-      :ui="{ base: 'h-full border-gray-800 border-2', background: 'to-gray-900', ring: 'ring-0' }"
-    >
+    <UCard class="h-full border-neutral-800 border-2 bg-neutral-900 ring-0">
       <div class="flex max-md:flex-col">
         <div class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 bg-gradient w-full">
           <SkillCard
@@ -50,9 +48,7 @@ useSeoMeta({
     <SubsectionTitle>
       Highlighted Projects
     </SubsectionTitle>
-    <UCard
-      :ui="{ base: 'h-full border-gray-800 border-2', background: 'to-gray-900', ring: 'ring-0' }"
-    >
+    <UCard class="h-full border-neutral-800 border-2 bg-neutral-900 ring-0">
       <div class="flex max-md:flex-col">
         <div class="grid xl:grid-cols-2 grid-cols-1 gap-4 bg-gradient w-full">
           <ProjectCard

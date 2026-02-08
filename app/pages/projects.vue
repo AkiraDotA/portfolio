@@ -54,23 +54,23 @@ const clearSelectedSkills = () => {
     <div class="flex justify-end">
       <USelectMenu
         v-model="selectedSkills"
-        :options="relevantSkills"
-        value-attribute="label"
+        :items="relevantSkills"
+        value-key="label"
         multiple
         searchable
-        searchable-placeholder="Search a skill..."
-        clear-search-on-close
         placeholder="Filter projects by skills"
         size="lg"
         icon="i-mdi-filter-outline"
         class="w-full"
       >
         <template #label>
-          <span v-if="selectedSkills.length" class="truncate">({{ selectedSkills.length }}) {{ selectedSkills.join(', ') }}</span>
+          <span
+            v-if="selectedSkills.length"
+            class="truncate"
+          >({{ selectedSkills.length }}) {{ selectedSkills.join(', ') }}</span>
         </template>
-        <template #option="{ option: skill }">
+        <template #option="{ item: skill }">
           <UIcon
-            dynamic
             :name="`i-${skill.iconCollection ?? 'simple-icons'}-${skill.icon}`"
             class="text-darkred w-5 h-5 my-1 me-2"
           />
@@ -80,7 +80,8 @@ const clearSelectedSkills = () => {
       <UButton
         v-if="selectedSkills.length"
         icon="i-mdi-close"
-        color="white"
+        color="neutral"
+        variant="outline"
         class="px-2"
         title="Clear selected skills"
         @click="clearSelectedSkills"

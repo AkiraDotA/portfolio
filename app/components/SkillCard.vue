@@ -20,9 +20,8 @@ const { elementX, elementY } = useMouseInElement(cardContainer);
     :x="elementX"
     :y="elementY"
   >
-    <div class="group relative flex items-center bg-gray-800 text-nowrap cursor-default p-4">
+    <div class="group relative flex items-center bg-neutral-800 text-nowrap cursor-default p-4">
       <UIcon
-        dynamic
         :name="`i-${iconCollection}-${skillIcon}`"
         class="text-3xl max-lg:text-2xl text-darkred me-5 z-10"
       />

@@ -3,7 +3,7 @@
 
 <template>
   <div class="flex flex-wrap lg:justify-center justify-end content-center items-center max-sm:mb-2 max-sm:ms-2">
-    <span class="sm:text-lg text-gray-400">Powered by</span>
+    <span class="sm:text-lg text-neutral-400">Powered by</span>
     <NuxtLink
       to="https://nuxt.com"
       target="_blank"

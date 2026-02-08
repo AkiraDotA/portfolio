@@ -10,7 +10,7 @@ const { error } = defineProps({
       {{ error.statusCode }}
     </h1>
 
-    <div class="text-2xl max-sm:text-xl text-gray-300">
+    <div class="text-2xl max-sm:text-xl text-neutral-300">
       <div v-if="error.statusCode !== 404">
         <p>Oops, something went wrong!</p>
       </div>

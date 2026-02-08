@@ -27,20 +27,20 @@ const clearForm = () => {
 const validateForm = () => {
 	const errors = [];
 	if (!contactFormData.name) {
-		errors.push({ path: 'name', message: 'Required' });
+		errors.push({ name: 'name', message: 'Required' });
 	}
 
 	if (!contactFormData.email) {
-		errors.push({ path: 'email', message: 'Required' });
+		errors.push({ name: 'email', message: 'Required' });
 	}
 
 	if (!contactFormData.message) {
-		errors.push({ path: 'message', message: 'Required' });
+		errors.push({ name: 'message', message: 'Required' });
 	}
 
 	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 	if (!emailRegex.test(contactFormData.email)) {
-		errors.push({ path: 'email', message: 'Invalid email' });
+		errors.push({ name: 'email', message: 'Invalid email' });
 	}
 
 	return errors;
@@ -81,18 +81,18 @@ const submitForm = async () => {
 			id: 'contact-message-sent',
 			title: 'Message Sent',
 			description: 'Your message has been sent successfully. I will get back to you at my earliest convenience.',
-			color: 'green',
+			color: 'success',
 			icon: 'i-mdi-check-circle',
-			timeout: 7500,
+			duration: 7500,
 		});
 	} catch (error) {
 		toast.add({
 			id: 'contact-recaptcha-failed',
 			title: 'Failed to Send Message',
 			description: 'Please try again later.',
-			color: 'red',
+			color: 'error',
 			icon: 'i-mdi-alert-circle',
-			timeout: 5000,
+			duration: 5000,
 		});
 	} finally {
 		clearForm();
@@ -105,7 +105,7 @@ const submitForm = async () => {
     <SectionTitle>Contact Me</SectionTitle>
 
     <div
-      class="border-gray-700 border-2 my-8"
+      class="border-neutral-700 border-2 my-8"
       role="presentation"
     >
       <iframe
@@ -124,7 +124,7 @@ const submitForm = async () => {
       :validate-on="['submit']"
       @submit="submitForm"
     >
-      <UFormGroup
+      <UFormField
         label="Your Name"
         name="name"
         size="xl"
@@ -135,11 +135,11 @@ const submitForm = async () => {
           placeholder="John Doe"
           size="lg"
           icon="i-mdi-account-outline"
-          required
+          class="w-full"
         />
-      </UFormGroup>
+      </UFormField>
 
-      <UFormGroup
+      <UFormField
         label="Your Email"
         name="email"
         size="xl"
@@ -151,11 +151,11 @@ const submitForm = async () => {
           size="lg"
           type="email"
           icon="i-mdi-email-outline"
-          required
+          class="w-full"
         />
-      </UFormGroup>
+      </UFormField>
 
-      <UFormGroup
+      <UFormField
         label="Subject"
         name="subject"
         size="xl"
@@ -164,10 +164,11 @@ const submitForm = async () => {
           v-model.trim="contactFormData.subject"
           placeholder="Contacting you for..."
           size="lg"
+          class="w-full"
         />
-      </UFormGroup>
+      </UFormField>
 
-      <UFormGroup
+      <UFormField
         label="Message"
         name="message"
         size="xl"
@@ -180,11 +181,11 @@ const submitForm = async () => {
           :rows="5"
           autoresize
           :maxrows="10"
-          required
+          class="w-full"
         />
-      </UFormGroup>
+      </UFormField>
 
-      <div class="text-gray-500 text-xs !mt-2">
+      <div class="text-neutral-500 text-xs !mt-2">
         This site is protected by reCAPTCHA and the Google
         <a
           href="https://policies.google.com/privacy"
@@ -200,10 +201,9 @@ const submitForm = async () => {
 
       <UButton
         type="submit"
-        color="darkred"
         size="lg"
         icon="i-mdi-send-outline"
-        class="flex !text-gray-300 ms-auto duration-300 max-sm:w-full justify-center"
+        class="flex !text-neutral-300 ms-auto duration-300 max-sm:w-full justify-center"
         :loading="submissionLoading"
       >
         Submit
