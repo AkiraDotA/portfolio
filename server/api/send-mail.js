@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 export default defineEventHandler(async event => {
 	const { from, subject, text, token } = await readBody(event);
 

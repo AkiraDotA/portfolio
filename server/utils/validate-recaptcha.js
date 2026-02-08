@@ -1,5 +1,3 @@
-import { consola } from 'consola';
-
 export async function validateRecaptcha(token) {
 	const { recaptchaSecretKey } = useRuntimeConfig();
 
