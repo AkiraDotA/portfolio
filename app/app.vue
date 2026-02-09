@@ -6,8 +6,8 @@ useSeoMeta({
 		return currentTitle.value;
 	},
 	ogSiteName: 'Zac Holly - Portfolio',
-	ogUrl: 'https://www.zacholly.net',
-	ogImage: 'https://www.zacholly.net/_nuxt/profile.BR-H94gZ.png',
+	ogUrl: 'https://zacholly.dev',
+	ogImage: 'https://zacholly.dev/_nuxt/profile.BR-H94gZ.png',
 });
 
 const { isMobileOrTablet } = useDevice();
