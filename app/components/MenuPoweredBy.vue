@@ -3,7 +3,7 @@
 
 <template>
 	<div class="flex flex-wrap lg:justify-center justify-end content-center items-center max-sm:mb-2 max-sm:ms-2">
-		<span class="sm:text-lg text-neutral-400">Powered by</span>
+		<span class="sm:text-lg text-neutral-500 dark:text-neutral-400">Powered by</span>
 		<NuxtLink
 			to="https://nuxt.com"
 			target="_blank"
@@ -13,7 +13,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 				width="80"
 				viewBox="0 0 128 32"
-				class="fill-darkred group-hover:fill-darkred-300 transition duration-300 ms-2 mb-1.5 max-sm:mb-1 max-sm:!w-[72px]"
+				class="fill-accent group-hover:fill-accent-300 transition duration-300 ms-2 mb-1.5 max-sm:mb-1 max-sm:!w-[72px]"
 				aria-label="Nuxt"
 				role="img"
 			>

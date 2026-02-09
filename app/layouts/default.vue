@@ -14,7 +14,20 @@ const { height: pageHeight } = useElementSize(pageContainer);
 	<div class="flex lg:flex-row flex-col my-16 max-sm:mt-4 mx-8 max-sm:mx-3">
 		<SpeedInsights />
 		<TheMenu ref="menuContainer" />
-		<UCard class="w-full transition-all duration-[0.25s] overflow-hidden" :style="{ 'height': pageHeight ? (extraSmallBreak ? 40 : 48) + pageHeight + 'px' : 'initial', 'min-height': menuHeight ? menuHeight + 'px' : 'initial' }">
+		<UCard class="relative w-full transition-all duration-[0.25s] overflow-hidden" :style="{ 'height': pageHeight ? (extraSmallBreak ? 40 : 48) + pageHeight + 'px' : 'initial', 'min-height': menuHeight ? menuHeight + 'px' : 'initial' }">
+			<UColorModeButton
+				title="Toggle color mode"
+				size="xl"
+				class="absolute top-4 right-4 z-10"
+			>
+				<template #fallback>
+					<UButton
+						loading
+						variant="ghost"
+						color="neutral"
+					/>
+				</template>
+			</UColorModeButton>
 			<div ref="pageContainer">
 				<slot />
 			</div>
