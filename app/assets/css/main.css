@@ -9,20 +9,44 @@
   /* Font */
   --font-poppins: 'Poppins', sans-serif;
 
-  /* Custom Colors: darkred palette */
-  --color-darkred: #991b1b;
-  --color-darkred-100: #8A1919;
-  --color-darkred-200: #7A1616;
-  --color-darkred-300: #6B1414;
-  --color-darkred-400: #5C1212;
-  --color-darkred-500: #4D0F0F;
-  --color-darkred-600: #3D0D0D;
+  /* Custom Colors: accent palette (mode-responsive via CSS variables) */
+  --color-accent: var(--accent);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
 
-  /* Custom Colors: waveblack */
-  --color-waveblack: #121212;
+  /* Custom Colors: wave (mode-responsive) */
+  --color-wave: var(--wave);
 
   /* Animation */
   --animate-rotate: rotate 4s linear infinite;
+}
+
+/* Light mode */
+:root {
+  --accent: #ef4444;
+  --accent-100: #dc2626;
+  --accent-200: #b91c1c;
+  --accent-300: #991b1b;
+  --accent-400: #7f1d1d;
+  --accent-500: #6b1414;
+  --accent-600: #581010;
+  --wave: #f5f5f5;
+}
+
+/* Dark mode — preserves current values */
+.dark {
+  --accent: #991b1b;
+  --accent-100: #8A1919;
+  --accent-200: #7A1616;
+  --accent-300: #6B1414;
+  --accent-400: #5C1212;
+  --accent-500: #4D0F0F;
+  --accent-600: #3D0D0D;
+  --wave: #121212;
 }
 
 @keyframes rotate {

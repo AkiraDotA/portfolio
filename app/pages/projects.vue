@@ -68,7 +68,7 @@ const filteredProjects = computed(() => {
 			<template #item-leading="{ item: skill }">
 				<UIcon
 					:name="`i-${skill.iconCollection ?? 'simple-icons'}-${skill.icon}`"
-					class="text-darkred w-5 h-5 my-1 me-2"
+					class="text-accent w-5 h-5 my-1 me-2"
 				/>
 			</template>
 		</USelectMenu>

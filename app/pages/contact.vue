@@ -108,7 +108,7 @@ const submitForm = async () => {
 		<SectionTitle>Contact Me</SectionTitle>
 
 		<div
-			class="border-neutral-700 border-2 my-8"
+			class="border-neutral-300 dark:border-neutral-700 border-2 my-8"
 			role="presentation"
 		>
 			<iframe
@@ -188,17 +188,17 @@ const submitForm = async () => {
 				/>
 			</UFormField>
 
-			<div class="text-neutral-500 text-xs !mt-2">
+			<div class="text-neutral-400 dark:text-neutral-500 text-xs !mt-2">
 				This site is protected by reCAPTCHA and the Google
 				<a
 					href="https://policies.google.com/privacy"
 					target="_blank"
-					class="text-darkred hover:underline"
+					class="text-accent hover:underline"
 				>Privacy Policy</a> and
 				<a
 					href="https://policies.google.com/terms"
 					target="_blank"
-					class="text-darkred hover:underline"
+					class="text-accent hover:underline"
 				>Terms of Service</a> apply.
 			</div>
 
@@ -206,7 +206,7 @@ const submitForm = async () => {
 				type="submit"
 				size="lg"
 				icon="i-mdi-send-outline"
-				class="flex !text-neutral-300 ms-auto duration-300 max-sm:w-full justify-center"
+				class="flex !text-neutral-100 ms-auto duration-300 max-sm:w-full justify-center"
 				:loading="submissionLoading"
 			>
 				Submit

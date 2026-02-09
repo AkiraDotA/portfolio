@@ -1,12 +1,12 @@
 <script setup>
 const availableTints = [
-	'bg-darkred',
-	'bg-darkred-100',
-	'bg-darkred-200',
-	'bg-darkred-300',
-	'bg-darkred-400',
-	'bg-darkred-500',
-	'bg-darkred-600',
+	'bg-accent',
+	'bg-accent-100',
+	'bg-accent-200',
+	'bg-accent-300',
+	'bg-accent-400',
+	'bg-accent-500',
+	'bg-accent-600',
 ];
 </script>
 
@@ -24,7 +24,7 @@ const availableTints = [
 				{{ navItem.label }}
 			</NavigationButton>
 		</nav>
-		<div class="nav-ender h-8 mb-6 max-lg:hidden" :class="availableTints[NAVIGATION.length + 1] ?? 'bg-darkred-600'" />
+		<div class="nav-ender h-8 mb-6 max-lg:hidden" :class="availableTints[NAVIGATION.length + 1] ?? 'bg-accent-600'" />
 	</div>
 </template>
 

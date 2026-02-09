@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 				lang: 'en',
 			},
 			bodyAttrs: {
-				class: 'bg-waveblack',
+				class: 'bg-wave',
 			},
 			link: [
 				{
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 	},
 	css: ['~/assets/css/main.css'],
 	colorMode: {
-		preference: 'dark',
+		preference: 'system',
 		classSuffix: '',
 	},
 	runtimeConfig: {

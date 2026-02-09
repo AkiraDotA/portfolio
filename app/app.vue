@@ -11,7 +11,17 @@ useSeoMeta({
 });
 
 const { isMobileOrTablet } = useDevice();
+const colorMode = useColorMode();
 const showVanta = ref(true);
+const vantaEffect = ref(null);
+
+const getVantaColors = (mode) => {
+	if (mode === 'dark') {
+		return { color: 0x0b0b0b, backgroundColor: 0x121212 };
+	}
+	return { color: 0xd0d0d0, backgroundColor: 0xf0f0f0 };
+};
+
 onMounted(() => {
 	if (isMobileOrTablet.value) {
 		return;
@@ -21,17 +31,28 @@ onMounted(() => {
 		showVanta.value = false;
 	});
 
-	VANTA.WAVES({
+	const colors = getVantaColors(colorMode.value);
+	vantaEffect.value = VANTA.WAVES({
 		el: '#vanta-background',
 		mouseControls: false,
 		touchControls: false,
 		gyroControls: false,
 		scale: 1.00,
-		color: 0x0b0b0b,
+		color: colors.color,
+		backgroundColor: colors.backgroundColor,
 		shininess: 0,
 		waveHeight: 20.00,
 		waveSpeed: 0.25,
 		zoom: 0.80,
+	});
+
+	watch(() => colorMode.value, (mode) => {
+		if (!vantaEffect.value) return;
+		const newColors = getVantaColors(mode);
+		vantaEffect.value.setOptions({
+			color: newColors.color,
+			backgroundColor: newColors.backgroundColor,
+		});
 	});
 });
 </script>

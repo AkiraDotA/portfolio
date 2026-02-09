@@ -20,7 +20,7 @@ useSeoMeta({
 		<SubsectionTitle>
 			Main Skills
 		</SubsectionTitle>
-		<UCard class="h-full border-neutral-800 border-2 bg-neutral-900 ring-0">
+		<UCard class="h-full border-neutral-200 dark:border-neutral-800 border-2 bg-white dark:bg-neutral-900 ring-0">
 			<div class="flex max-md:flex-col">
 				<div class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 bg-gradient w-full">
 					<SkillCard
@@ -32,7 +32,7 @@ useSeoMeta({
 						{{ skill.label }}
 					</SkillCard>
 				</div>
-				<NavigationButton to="/skills" class="flex justify-center items-center bg-darkred-300 !text-base md:!w-48 h-12 md:ms-8 md:me-2 max-md:mt-6 my-auto">
+				<NavigationButton to="/skills" class="flex justify-center items-center bg-accent-300 !text-base md:!w-48 h-12 md:ms-8 md:me-2 max-md:mt-6 my-auto">
 					<span class="flex">
 						All Skills
 						<UIcon
@@ -47,7 +47,7 @@ useSeoMeta({
 		<SubsectionTitle>
 			Highlighted Projects
 		</SubsectionTitle>
-		<UCard class="h-full border-neutral-800 border-2 bg-neutral-900 ring-0">
+		<UCard class="h-full border-neutral-200 dark:border-neutral-800 border-2 bg-white dark:bg-neutral-900 ring-0">
 			<div class="flex max-md:flex-col">
 				<div class="grid xl:grid-cols-2 grid-cols-1 gap-4 bg-gradient w-full">
 					<ProjectCard
@@ -57,7 +57,7 @@ useSeoMeta({
 						minimal
 					/>
 				</div>
-				<NavigationButton to="/projects" class="flex justify-center items-center bg-darkred-300 !text-base md:!w-48 h-12 md:ms-8 md:me-2 max-md:mt-6 my-auto">
+				<NavigationButton to="/projects" class="flex justify-center items-center bg-accent-300 !text-base md:!w-48 h-12 md:ms-8 md:me-2 max-md:mt-6 my-auto">
 					<span class="flex">
 						All Projects
 						<UIcon

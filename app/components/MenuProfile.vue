@@ -7,7 +7,7 @@
 			class="relative z-10 lg:min-w-[195px] sm:min-w-[120px] w-[105px] lg:mx-auto me-8 flex overflow-hidden p-1"
 		>
 			<div
-				class="animate-rotate absolute inset-0 bg-[conic-gradient(#991b1b_20deg,#4D0F0F_270deg)]"
+				class="animate-rotate absolute inset-0 bg-[conic-gradient(var(--color-accent)_20deg,var(--color-accent-500)_270deg)]"
 			/>
 			<img
 				src="/images/profile.png"

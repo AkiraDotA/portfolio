@@ -19,14 +19,14 @@ const { isMobileOrTablet } = useDevice();
 </script>
 
 <template>
-	<div class="relative overflow-hidden transition duration-300 ease-out p-0.5 bg-neutral-800 hover:bg-darkred-400">
+	<div class="relative overflow-hidden transition duration-300 ease-out p-0.5 bg-neutral-200 dark:bg-neutral-800 hover:bg-accent-200 dark:hover:bg-accent-400">
 		<div class="slotContainer h-full">
 			<slot />
 		</div>
 		<div
 			v-if="!isMobileOrTablet"
 			v-show="x || y"
-			class="absolute translate-y-[-50%] translate-x-[-50%] pointer-events-none size-112.5 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-darkred)_100%,transparent),transparent)]"
+			class="absolute translate-y-[-50%] translate-x-[-50%] pointer-events-none size-112.5 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-accent)_100%,transparent),transparent)]"
 			:class="radialGradientClasses"
 			:style="{ top: `${y}px`, left: `${x}px` }"
 		/>

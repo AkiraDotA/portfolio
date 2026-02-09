@@ -14,11 +14,11 @@ const cardContainer = ref(null);
 const { elementX, elementY, isOutside } = useMouseInElement(cardContainer);
 
 const backgroundTints = [
-	'!bg-darkred-100',
-	'!bg-darkred-200',
-	'!bg-darkred-300',
-	'!bg-darkred-400',
-	'!bg-darkred-500',
+	'!bg-accent-100',
+	'!bg-accent-200',
+	'!bg-accent-300',
+	'!bg-accent-400',
+	'!bg-accent-500',
 ];
 const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
 </script>
@@ -36,15 +36,15 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
 		>
 			<UCard
 				:ui="{ body: 'flex flex-col h-full' }"
-				class="cursor-default h-full bg-gradient-to-br to-neutral-900 from-neutral-800 ring-0"
+				class="cursor-default h-full bg-gradient-to-br to-white from-neutral-50 dark:to-neutral-900 dark:from-neutral-800 ring-0"
 			>
-				<h4 class="after:block after:bg-darkred after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
+				<h4 class="after:block after:bg-accent after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
 					{{ project.title }}
 				</h4>
 
 				<p
 					v-if="!minimal"
-					class="my-5 text-neutral-300"
+					class="my-5 text-neutral-600 dark:text-neutral-300"
 					v-html="project.summary"
 				/>
 
@@ -52,7 +52,7 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
 					<UBadge
 						v-for="(skill, index) in project.skills"
 						:key="index"
-						:class="[getLoopingTint(index), 'm-1 !text-white font-light']"
+						:class="[getLoopingTint(index), 'm-1 !text-neutral-100 font-light']"
 					>
 						{{ skill.label }}
 					</UBadge>
