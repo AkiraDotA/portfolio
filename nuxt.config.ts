@@ -1,14 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-	devtools: { enabled: true },
-	modules: [
-		'@nuxtjs/color-mode',
-		'@nuxtjs/eslint-module',
-		'@nuxt/ui',
-		'@nuxtjs/device',
-		'nuxt-nodemailer',
-	],
+	modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-nodemailer', '@nuxtjs/device'],
 	imports: {
 		presets: [
 			{
@@ -16,23 +9,6 @@ export default defineNuxtConfig({
 				imports: ['breakpointsTailwind', 'useBreakpoints', 'useElementSize', 'useMouseInElement'],
 			},
 		],
-	},
-	devServer: {
-		host: 'localhost',
-		port: 3030,
-	},
-	colorMode: {
-		preference: 'dark',
-		classSuffix: '',
-	},
-	nodemailer: {
-		host: process.env.NUXT_MAIL_SMPT,
-		port: process.env.NUXT_MAIL_PORT,
-		secure: true,
-		auth: {
-			user: process.env.NUXT_MAIL_USERNAME,
-			pass: process.env.NUXT_MAIL_PASSWORD,
-		},
 	},
 	app: {
 		head: {
@@ -58,8 +34,10 @@ export default defineNuxtConfig({
 			mode: 'out-in',
 		},
 	},
-	ui: {
-		icons: ['mdi', 'simple-icons', 'hugeicons'],
+	css: ['~/assets/css/main.css'],
+	colorMode: {
+		preference: 'dark',
+		classSuffix: '',
 	},
 	runtimeConfig: {
 		public: {
@@ -68,5 +46,26 @@ export default defineNuxtConfig({
 		recaptchaSecretKey: process.env.NUXT_RECAPTCHA_SECRET_KEY,
 		mailUsername: process.env.NUXT_MAIL_USERNAME,
 	},
-	compatibilityDate: '2024-08-25',
+	devServer: {
+		host: 'localhost',
+		port: 3030,
+	},
+	compatibilityDate: '2026-02-08',
+	eslint: {
+		config: {
+			stylistic: {
+				indent: 'tab',
+				semi: true,
+			},
+		},
+	},
+	nodemailer: {
+		host: process.env.NUXT_MAIL_SMTP,
+		port: Number(process.env.NUXT_MAIL_PORT),
+		secure: true,
+		auth: {
+			user: process.env.NUXT_MAIL_USERNAME,
+			pass: process.env.NUXT_MAIL_PASSWORD,
+		},
+	},
 });
