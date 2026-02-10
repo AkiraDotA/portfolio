@@ -193,12 +193,12 @@ const submitForm = async () => {
 				<a
 					href="https://policies.google.com/privacy"
 					target="_blank"
-					class="text-accent hover:underline"
+					class="link-accent"
 				>Privacy Policy</a> and
 				<a
 					href="https://policies.google.com/terms"
 					target="_blank"
-					class="text-accent hover:underline"
+					class="link-accent"
 				>Terms of Service</a> apply.
 			</div>
 

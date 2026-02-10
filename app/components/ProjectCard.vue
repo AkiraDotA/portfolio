@@ -38,13 +38,13 @@ const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
 				:ui="{ body: 'flex flex-col h-full' }"
 				class="cursor-default h-full bg-gradient-to-br to-white from-neutral-50 dark:to-neutral-900 dark:from-neutral-800 ring-0"
 			>
-				<h4 class="after:block after:bg-accent after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
+				<h4 class="accent-bar after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
 					{{ project.title }}
 				</h4>
 
 				<p
 					v-if="!minimal"
-					class="my-5 text-neutral-600 dark:text-neutral-300"
+					class="my-5 text-body"
 					v-html="project.summary"
 				/>
 
