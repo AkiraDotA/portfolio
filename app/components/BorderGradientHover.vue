@@ -26,7 +26,7 @@ const { isMobileOrTablet } = useDevice();
 		<div
 			v-if="!isMobileOrTablet"
 			v-show="x || y"
-			class="absolute translate-y-[-50%] translate-x-[-50%] pointer-events-none size-112.5 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-accent)_100%,transparent),transparent)]"
+			class="gradient-overlay size-112.5 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-accent)_100%,transparent),transparent)]"
 			:class="radialGradientClasses"
 			:style="{ top: `${y}px`, left: `${x}px` }"
 		/>

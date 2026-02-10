@@ -53,3 +53,39 @@
   0% { transform: rotate(0deg) scale(360); }
   100% { transform: rotate(-360deg) scale(360); }
 }
+
+/*
+ * Reusable Utility Classes
+ */
+
+@utility card-bordered {
+  @apply h-full border-2 border-neutral-200 bg-white ring-0 dark:border-neutral-800 dark:bg-neutral-900;
+}
+
+@utility btn-view-all {
+  @apply !flex h-12 items-center justify-center bg-accent-300 !text-base my-auto md:ms-8 md:me-2 md:!w-48 max-md:mt-6;
+}
+
+@utility link-social {
+  @apply transition duration-300 hover:text-neutral-700 dark:hover:text-neutral-200;
+}
+
+@utility link-accent {
+  @apply text-accent hover:underline;
+}
+
+@utility text-muted {
+  @apply text-neutral-500 dark:text-neutral-400;
+}
+
+@utility text-body {
+  @apply text-neutral-600 dark:text-neutral-300;
+}
+
+@utility gradient-overlay {
+  @apply absolute translate-x-[-50%] translate-y-[-50%] pointer-events-none;
+}
+
+@utility accent-bar {
+  @apply after:block after:bg-accent;
+}
