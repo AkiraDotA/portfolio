@@ -3,6 +3,7 @@
 export default defineNuxtConfig({
 	modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-nodemailer', '@nuxtjs/device'],
 	imports: {
+		dirs: ['~/utils/constants'],
 		presets: [
 			{
 				from: '@vueuse/core',
