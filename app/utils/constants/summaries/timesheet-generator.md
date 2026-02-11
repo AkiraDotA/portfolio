@@ -1,0 +1,1 @@
+Developed a desktop application to generate timesheet text output from defined work schedules, enabling the easy creation of formatted Excel timesheets for accurate hour tracking during each pay period.

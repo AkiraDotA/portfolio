@@ -1,0 +1,1 @@
+Revamping a legacy PHP marketing site with an in-progress Nuxt 3 project. Adapted and customized a Nuxt 3 template to meet specific requirements, developing pages including login, catalog, book, cart, checkout, resource request forms, policy pages, and enrollment paths.

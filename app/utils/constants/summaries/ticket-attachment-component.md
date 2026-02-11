@@ -1,0 +1,1 @@
+Implemented support for ticket attachments by designing and developing stylized and intuitive Vue components that deliver detailed attachment information, integrated with Freshdesk's API through a custom REST API wrapper.

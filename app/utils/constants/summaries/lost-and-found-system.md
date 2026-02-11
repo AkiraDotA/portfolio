@@ -1,0 +1,1 @@
+Created a lost and found system for campus public safety, enabling students and faculty to view and claim lost items. Features include admin functionality for adding, deleting, and reporting items, and a user interface allowing item categorization and detailed claim submissions.

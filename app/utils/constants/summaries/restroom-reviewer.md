@@ -1,0 +1,1 @@
+Developed a web app simplifying the search for quality public restrooms via Google Maps API. Key features include user authentication, restroom pinning, review submission, and admin tools for user and data management, providing a user-friendly platform for locating and reviewing public restrooms.
