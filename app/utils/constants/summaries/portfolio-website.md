@@ -1,0 +1,1 @@
+Created this personal portfolio website to showcase my software engineering skills and projects, highlighting my work over the years. This project was also my first experience using Tailwind CSS, which I primarily used for all styling.

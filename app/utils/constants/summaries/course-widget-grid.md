@@ -1,0 +1,1 @@
+Developed a course widget grid from an initial wireframe, serving as a dynamic course home page for students and instructors. Features include movable and resizable widgets that display course information such as announcements, upcoming assignments, grades, class averages, and the course calendar.

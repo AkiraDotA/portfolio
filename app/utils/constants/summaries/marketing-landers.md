@@ -1,0 +1,1 @@
+Implemented modern marketing landers from initial wireframes, showcasing the company and primary product with updated visuals. The landers include details such as user statistics, included features, and user quotes.

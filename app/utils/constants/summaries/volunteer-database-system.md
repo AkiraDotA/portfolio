@@ -1,0 +1,1 @@
+Designed and implemented a database system to streamline volunteer management processes including registration, tracking volunteer hours, and generating detailed reports for analysis.
