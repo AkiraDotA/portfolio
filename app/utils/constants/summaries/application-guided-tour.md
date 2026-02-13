@@ -1,1 +1,0 @@
-Designed and developed custom Vue implementation of a guided tour, powered by shepherd.js that allowed developers to easily create guided tour steps for an interactive tour.

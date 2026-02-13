@@ -28,7 +28,7 @@ const { isMobileOrTablet } = useDevice();
 			v-show="x || y"
 			class="gradient-overlay size-112.5 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-accent)_100%,transparent),transparent)]"
 			:class="radialGradientClasses"
-			:style="{ top: `${y}px`, left: `${x}px` }"
+			:style="{ transform: `translate(${x}px, ${y}px)` }"
 		/>
 	</div>
 </template>

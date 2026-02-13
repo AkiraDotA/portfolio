@@ -1,1 +1,0 @@
-Developed an incident management system for documenting and categorizing safety incidents, triggering alerts for review meetings, and generating comprehensive PDF incident history reports.

@@ -1,1 +1,0 @@
-Built a web-based version of the dice game, Farkle, supporting up to four local players, featuring a user-friendly interface, score tracking, and real-time game updates.

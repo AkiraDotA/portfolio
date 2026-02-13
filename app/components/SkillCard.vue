@@ -1,34 +1,37 @@
 <script setup>
-const { skillIcon } = defineProps({
-	skillIcon: {
-		type: String,
+const { skill } = defineProps({
+	skill: {
+		type: Object,
 		required: true,
-	},
-	iconCollection: {
-		type: String,
-		default: 'simple-icons',
 	},
 });
 
+const link = computed(() => ({
+	path: '/projects',
+	query: { skills: skill.filterKeys?.join(',') ?? skill.key },
+}));
+
 const cardContainer = ref(null);
-const { elementX, elementY } = useMouseInElement(cardContainer);
+const { elementX, elementY } = useSharedMouseInElement(cardContainer);
 </script>
 
 <template>
-	<BorderGradientHover
-		ref="cardContainer"
-		:x="elementX"
-		:y="elementY"
-	>
-		<div class="group relative flex items-center bg-neutral-100 dark:bg-neutral-800 text-nowrap cursor-default p-4">
-			<UIcon
-				:name="`i-${iconCollection}-${skillIcon}`"
-				class="text-3xl max-lg:text-2xl text-accent me-5 z-10"
-			/>
-			<span class="text-lg max-lg:text-base z-10"><slot /></span>
-			<div class="transition-opacity ease-out duration-300 group-hover:opacity-100 opacity-0 bg-gradient-to-l from-accent-200 dark:from-accent-400 to-50% w-full h-full absolute top-0 left-0" />
-		</div>
-	</BorderGradientHover>
+	<NuxtLink :to="link">
+		<BorderGradientHover
+			ref="cardContainer"
+			:x="elementX"
+			:y="elementY"
+		>
+			<div class="group relative flex items-center bg-neutral-100 dark:bg-neutral-800 text-nowrap cursor-pointer p-4">
+				<UIcon
+					:name="`i-${skill.iconCollection ?? 'simple-icons'}-${skill.icon}`"
+					class="text-3xl max-lg:text-2xl text-accent me-5 z-10"
+				/>
+				<span class="text-lg max-lg:text-base z-10"><slot /></span>
+				<div class="transition-opacity ease-out duration-300 group-hover:opacity-100 opacity-0 bg-gradient-to-l from-accent-200 dark:from-accent-400 to-50% w-full h-full absolute top-0 left-0" />
+			</div>
+		</BorderGradientHover>
+	</NuxtLink>
 </template>
 
 <style scoped>

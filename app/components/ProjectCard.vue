@@ -11,55 +11,49 @@ const { project } = defineProps({
 });
 
 const cardContainer = ref(null);
-const { elementX, elementY, isOutside } = useMouseInElement(cardContainer);
-
-const backgroundTints = [
-	'!bg-accent-100',
-	'!bg-accent-200',
-	'!bg-accent-300',
-	'!bg-accent-400',
-	'!bg-accent-500',
-];
-const getLoopingTint = index => backgroundTints[index % backgroundTints.length];
+const { elementX, elementY, isOutside } = useSharedMouseInElement(cardContainer);
 </script>
 
 <template>
-	<BorderGradientHover
-		ref="cardContainer"
-		:x="elementX"
-		:y="elementY"
-	>
-		<BackgroundGradientHover
+	<NuxtLink :to="`/projects/${project.id}`">
+		<BorderGradientHover
+			ref="cardContainer"
 			:x="elementX"
 			:y="elementY"
-			:is-outside="isOutside"
+			class="h-full"
 		>
-			<UCard
-				:ui="{ body: 'flex flex-col h-full' }"
-				class="cursor-default h-full bg-gradient-to-br to-white from-neutral-50 dark:to-neutral-900 dark:from-neutral-800 ring-0"
+			<BackgroundGradientHover
+				:x="elementX"
+				:y="elementY"
+				:is-outside="isOutside"
 			>
-				<h4 class="accent-bar after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
-					{{ project.title }}
-				</h4>
+				<UCard
+					:ui="{ body: 'flex flex-col h-full' }"
+					class="cursor-pointer h-full bg-gradient-to-br to-white from-neutral-50 dark:to-neutral-900 dark:from-neutral-800 ring-0"
+				>
+					<h4 class="accent-bar after:mt-2 after:py-0.5 after:w-24" :class="minimal ? 'text-lg' : 'text-2xl'">
+						{{ project.title }}
+					</h4>
 
-				<p
-					v-if="!minimal"
-					class="my-5 text-body"
-					v-html="project.summary"
-				/>
+					<div
+						v-if="!minimal"
+						class="my-5 text-body"
+						v-html="project.summary"
+					/>
 
-				<div class="mt-auto" :class="{ 'pt-6': minimal }">
-					<UBadge
-						v-for="(skill, index) in project.skills"
-						:key="index"
-						:class="[getLoopingTint(index), 'm-1 !text-neutral-100 font-light']"
-					>
-						{{ skill.label }}
-					</UBadge>
-				</div>
-			</UCard>
-		</BackgroundGradientHover>
-	</BorderGradientHover>
+					<div class="mt-auto" :class="{ 'pt-6': minimal }">
+						<UBadge
+							v-for="(skill, index) in project.skills"
+							:key="index"
+							:class="[getLoopingTint(index), 'm-1 !text-neutral-100 font-light']"
+						>
+							{{ skill.label }}
+						</UBadge>
+					</div>
+				</UCard>
+			</BackgroundGradientHover>
+		</BorderGradientHover>
+	</NuxtLink>
 </template>
 
 <style scoped>

@@ -1,0 +1,7 @@
+Finding a clean, accessible public restroom in an unfamiliar area is a surprisingly common frustration. Existing map applications show restroom locations but offer no insight into quality, cleanliness, or amenities, leaving users to discover poor conditions only after arriving.
+
+I developed a full-stack web application that addressed this gap by combining location discovery with community-driven reviews. Users could browse an **interactive Google Maps interface** to find nearby restrooms, read reviews from other users, and submit their own ratings covering cleanliness, accessibility, and overall experience. The platform supported full **user authentication** with registration and login, allowing reviewers to build a profile history.
+
+The front end was built with Vue 3 using a component-driven architecture, while the back end ran on Node.js with Express providing a RESTful API layer backed by MySQL. I integrated the **Google Maps JavaScript API** for map rendering and geocoding, implemented **session-based authentication** for secure user management, and built an **admin dashboard** that provided user moderation tools and oversight of submitted restroom entries and reviews. The database schema was designed to support relational queries across users, locations, and reviews efficiently.
+
+This project showcases full-stack development across a modern JavaScript stack, demonstrating competence with third-party API integration, relational data modeling, authentication workflows, and role-based access control.

@@ -30,7 +30,7 @@ const { isMobileOrTablet } = useDevice();
 		<div
 			v-if="!isMobileOrTablet && !isOutside"
 			class="gradient-overlay size-75 bg-[radial-gradient(circle_closest-side,color-mix(in_srgb,var(--color-accent)_20%,transparent),transparent)]"
-			:style="{ top: `${y}px`, left: `${x}px` }"
+			:style="{ transform: `translate(${x}px, ${y}px)` }"
 		/>
 	</div>
 </template>
