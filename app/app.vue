@@ -22,14 +22,32 @@ const getVantaColors = (mode) => {
 	return { color: 0xd0d0d0, backgroundColor: 0xf0f0f0 };
 };
 
-onMounted(() => {
+// Injects a <script> tag at runtime so Three.js + Vanta.js stay off the critical path
+const loadScript = (src) => new Promise((resolve, reject) => {
+	const script = document.createElement('script');
+	script.src = src;
+	script.onload = resolve;
+	script.onerror = reject;
+	document.head.appendChild(script);
+});
+
+onMounted(async () => {
 	if (isMobileOrTablet.value) {
 		return;
 	}
 
+	// Hide the canvas before unload to prevent a flash of the last frame on back-navigation
 	window.addEventListener('beforeunload', () => {
 		showVanta.value = false;
 	});
+
+	try {
+		await loadScript('/js/three.r134.min.js');
+		await loadScript('/js/vanta.waves.min.js');
+	}
+	catch {
+		return;
+	}
 
 	const colors = getVantaColors(colorMode.value);
 	vantaEffect.value = VANTA.WAVES({
