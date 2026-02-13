@@ -1,0 +1,7 @@
+The platform's public-facing marketing site had been running on a legacy PHP codebase that was increasingly difficult to maintain and extend. A ground-up rebuild was needed to modernize the frontend, improve the user experience, and support richer interactive content while preserving critical functionality like account management and catalog browsing.
+
+I built the new marketing site from scratch in Nuxt 3, developing every section from the feature showcases and LMS partner integrations to the login flows, catalog browsing, and enrollment paths. The site serves as the primary entry point for prospective and returning users, combining product marketing with functional account capabilities.
+
+Key interactive features include **video modals** with CDN-hosted content, **image viewing** via v-viewer for full-resolution feature screenshots, and **Calendly scheduling integration** with prefilled user context for demo bookings. I built a **sticky navigation footer** with scroll-aware behavior, implemented dark mode styling, and created account flows including login, registration, and environment-aware routing. **Accessibility was integrated from early development**, with focus management for support links, video controls, and footer navigation. The SPA was deployed through **GitHub Actions** with custom favicon handling and CDN URL configuration.
+
+The project reflects full ownership of a marketing site rebuild, from initial architecture through deployment, balancing rich interactivity with usability and accessibility standards.

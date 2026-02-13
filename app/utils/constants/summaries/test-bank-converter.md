@@ -1,1 +1,1 @@
-Created and maintained a robust desktop application designed to convert imported test banks into an intermediate format for cloud storage and seamless export to various file formats as needed.
+Built and maintained a JavaFX desktop application for converting publisher test banks between formats like DOCX, Moodle XML, plain text, and Excel. Handled complex document parsing challenges including **table formatting preservation**, an **HTML-to-image conversion pipeline**, and a **question validation system**, packaged as a standalone Windows executable with a bundled JRE.

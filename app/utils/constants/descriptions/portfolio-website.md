@@ -1,0 +1,7 @@
+I wanted a portfolio site that reflected my technical abilities rather than relying on a template, so I designed and built this project from scratch as both a showcase and an engineering exercise. The goal was a polished, interactive experience that demonstrated frontend craftsmanship while remaining fast and accessible.
+
+The site is built on Nuxt 3 with Vue 3 Composition API and Tailwind CSS, featuring a responsive **two-panel layout** with a sticky sidebar menu and a content card that dynamically sizes to its page content. A custom **accent color palette** defined through CSS variables powers seamless light and dark mode switching across every component. The projects page includes skill-based filtering, and the contact page integrates a **reCAPTCHA v3**-validated form backed by a server-side email API via nuxt-nodemailer.
+
+On desktop, a **Vanta.js animated wave background** rendered through Three.js creates a dynamic visual backdrop that adapts its color to the active color mode. **Mouse-tracking radial gradient hover effects** built with VueUse's useMouseInElement composable add interactivity to card components. Both effects are desktop-only, detected via the device module to ensure clean performance on mobile and tablet.
+
+This project represents end-to-end ownership of a production web application, from design and architecture decisions through deployment on Vercel, demonstrating proficiency with modern Vue tooling, responsive design, and attention to visual detail.

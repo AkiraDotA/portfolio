@@ -1,1 +1,0 @@
-Developed a desktop application for importing unformatted Word test bank documents, formatting them, and exporting to RTF files that match the standard Diploma test bank file format for test bank conversion.

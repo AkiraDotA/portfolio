@@ -1,1 +1,0 @@
-Designed and developed a dynamic ticket form that adjusts fields based on user input throughout the form, enhancing the overall user experience for ticket submissions.
