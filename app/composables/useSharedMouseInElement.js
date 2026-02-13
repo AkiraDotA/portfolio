@@ -4,21 +4,24 @@ export function useSharedMouseInElement(target) {
 	const resolveEl = () => toValue(target)?.$el ?? toValue(target);
 
 	const elementX = computed(() => {
-		scrollX.value; scrollY.value;
+		scrollX.value;
+		scrollY.value;
 		const el = resolveEl();
 		if (!el) return 0;
 		return mouseX.value - el.getBoundingClientRect().left;
 	});
 
 	const elementY = computed(() => {
-		scrollX.value; scrollY.value;
+		scrollX.value;
+		scrollY.value;
 		const el = resolveEl();
 		if (!el) return 0;
 		return mouseY.value - el.getBoundingClientRect().top;
 	});
 
 	const isOutside = computed(() => {
-		scrollX.value; scrollY.value;
+		scrollX.value;
+		scrollY.value;
 		const el = resolveEl();
 		if (!el) return true;
 		const rect = el.getBoundingClientRect();

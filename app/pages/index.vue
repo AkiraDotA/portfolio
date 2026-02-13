@@ -12,9 +12,11 @@ useSeoMeta({
 		<SectionTitle>About Me</SectionTitle>
 
 		<p class="text-body">
-			I'm a Software Engineer with expertise in JavaScript and Vue.js. I've worked on numerous projects,
-			including front-end Vue applications, Excel add-ins, web accessibility auditing and improvements, and many more.
-			I'm a quick learner, a collaborative team player, and passionate about leveraging technology to solve difficult problems.
+			I'm a Software Engineer who works across the full stack, with deep roots in the Vue ecosystem.
+			With 9+ years in EdTech, I've led a ground-up Vue 3 migration, built Excel add-ins with formula validation engines,
+			contributed to a large-scale PHP backend, and run multiple rounds of WCAG accessibility audits.
+			I've worked on everything from frontend SPAs and Nuxt sites to Office.js add-ins, Java desktop apps, and mobile builds.
+			No matter the platform, I focus on clean architecture, accessibility, and building things the right way.
 		</p>
 
 		<SubsectionTitle>
@@ -26,8 +28,7 @@ useSeoMeta({
 					<SkillCard
 						v-for="(skill, index) of MAIN_SKILLS"
 						:key="index"
-						:skill-icon="skill.icon"
-						:icon-collection="skill.iconCollection"
+						:skill="skill"
 					>
 						{{ skill.label }}
 					</SkillCard>
