@@ -11,7 +11,7 @@ const { skillIcon } = defineProps({
 });
 
 const cardContainer = ref(null);
-const { elementX, elementY } = useMouseInElement(cardContainer);
+const { elementX, elementY } = useSharedMouseInElement(cardContainer);
 </script>
 
 <template>

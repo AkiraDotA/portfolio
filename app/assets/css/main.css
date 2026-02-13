@@ -79,11 +79,11 @@
 }
 
 @utility text-body {
-  @apply text-neutral-600 dark:text-neutral-300;
+  @apply text-neutral-600 dark:text-neutral-300 leading-relaxed;
 }
 
 @utility gradient-overlay {
-  @apply absolute translate-x-[-50%] translate-y-[-50%] pointer-events-none;
+  @apply absolute top-0 left-0 translate-x-[-50%] translate-y-[-50%] pointer-events-none will-change-transform;
 }
 
 @utility accent-bar {

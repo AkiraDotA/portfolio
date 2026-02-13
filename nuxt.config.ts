@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 		presets: [
 			{
 				from: '@vueuse/core',
-				imports: ['breakpointsTailwind', 'useBreakpoints', 'useElementSize', 'useMouseInElement'],
+				imports: ['breakpointsTailwind', 'useBreakpoints', 'useElementSize', 'useMouseInElement', 'useMouse'],
 			},
 		],
 	},

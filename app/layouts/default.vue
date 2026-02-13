@@ -17,7 +17,7 @@ const { height: pageHeight } = useElementSize(pageContainer);
 		<UCard class="relative w-full transition-all duration-[0.25s] overflow-hidden" :style="{ 'height': pageHeight ? (extraSmallBreak ? 40 : 48) + pageHeight + 'px' : 'initial', 'min-height': menuHeight ? menuHeight + 'px' : 'initial' }">
 			<UColorModeButton
 				title="Toggle color mode"
-				size="xl"
+				size="lg"
 				class="absolute top-4 right-4 z-10"
 			>
 				<template #fallback>

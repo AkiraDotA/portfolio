@@ -11,7 +11,7 @@ useSeoMeta({
 	<div>
 		<SectionTitle>About Me</SectionTitle>
 
-		<p>
+		<p class="text-body">
 			I'm a Software Engineer with expertise in JavaScript and Vue.js. I've worked on numerous projects,
 			including front-end Vue applications, Excel add-ins, web accessibility auditing and improvements, and many more.
 			I'm a quick learner, a collaborative team player, and passionate about leveraging technology to solve difficult problems.
