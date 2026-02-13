@@ -42,7 +42,7 @@ export const PROJECT_CATEGORIES = [
 			{
 				id: 'instructor-dashboard-vue3',
 				title: 'Instructor Dashboard — Vue 3 Migration',
-				skills: [SKILLS.javascript, SKILLS.vue3, SKILLS.tailwind],
+				skills: [SKILLS.javascript, SKILLS.vue3, SKILLS.tailwind, SKILLS.pinia, SKILLS.zod],
 				highlights: [
 					'Led full architectural migration from Vue 2 with Vue CLI and Vuex to Vue 3 with Composition API and Pinia',
 					'Primary developer rebuilding every major feature from scratch',
@@ -66,7 +66,7 @@ export const PROJECT_CATEGORIES = [
 			{
 				id: 'central-php-system',
 				title: 'Central PHP System',
-				skills: [SKILLS.php, SKILLS.codeigniter, SKILLS.javascript, SKILLS.jquery, SKILLS.mysql],
+				skills: [SKILLS.php, SKILLS.codeigniter, SKILLS.symfony, SKILLS.mysql, SKILLS.jquery],
 				highlights: [
 					'Contributions spanning a monorepo built on CodeIgniter 3, Symfony 6, and Moodle',
 					'Helped build the base course copy feature enabling bulk assignment copying with due date retention',
@@ -90,7 +90,7 @@ export const PROJECT_CATEGORIES = [
 			{
 				id: 'question-taker-excel-addin',
 				title: 'Question Taking Excel Add-in',
-				skills: [SKILLS.javascript, SKILLS.officejs],
+				skills: [SKILLS.javascript, SKILLS.vue3, SKILLS.officejs, SKILLS.bootstrap],
 				highlights: [
 					'Formula validation engine that simplifies student and expected formulas to canonical forms for comparison',
 					'Real-time "Check My Work" feedback with visual cell-level indicators for correct and incorrect answers',
@@ -194,8 +194,8 @@ export function findProjectCategory(id) {
 }
 
 export const HIGHLIGHTED_PROJECTS = [
-	findProject('marketing-site'),
-	findProject('central-php-system'),
-	findProject('question-taker-excel-addin'),
 	findProject('instructor-dashboard-vue3'),
+	findProject('question-taker-excel-addin'),
+	findProject('central-php-system'),
+	findProject('marketing-site'),
 ];

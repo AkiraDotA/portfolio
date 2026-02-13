@@ -19,8 +19,7 @@ useSeoMeta({
 			<SkillCard
 				v-for="(skill, key) in skillCategory.skills"
 				:key="key"
-				:skill-icon="skill.icon"
-				:icon-collection="skill.iconCollection"
+				:skill="skill"
 			>
 				{{ skill.label }}
 			</SkillCard>
