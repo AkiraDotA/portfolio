@@ -2,8 +2,8 @@
 useSeoMeta({
 	title: 'About Me',
 	ogTitle: 'About Me | Zac Holly',
-	ogDescription: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, and performant web applications.',
-	description: 'Zac Holly is a Software Engineer with expertise in JavaScript and Vue.js. He is passionate about creating accessible, responsive, and performant web applications.',
+	ogDescription: 'Software Engineer with 9+ years in EdTech. Vue 3 migration lead, Excel add-in developer, and accessibility advocate delivering measurable performance gains.',
+	description: 'Software Engineer with 9+ years in EdTech. Vue 3 migration lead, Excel add-in developer, and accessibility advocate delivering measurable performance gains.',
 });
 </script>
 
@@ -12,11 +12,10 @@ useSeoMeta({
 		<SectionTitle>About Me</SectionTitle>
 
 		<p class="text-body">
-			I'm a Software Engineer who works across the full stack, with deep roots in the Vue ecosystem.
-			With 9+ years in EdTech, I've led a ground-up Vue 3 migration, built Excel add-ins with formula validation engines,
-			contributed to a large-scale PHP backend, and run multiple rounds of WCAG accessibility audits.
-			I've worked on everything from frontend SPAs and Nuxt sites to Office.js add-ins, Java desktop apps, and mobile builds.
-			No matter the platform, I focus on clean architecture, accessibility, and building things the right way.
+			I'm a Software Engineer with 9+ years in EdTech and deep roots in the Vue ecosystem.
+			I led a ground-up Vue 3 migration spanning 30+ views and 130+ components, cutting bundle size by 63% and improving page loads by over 50%.
+			I've built Excel add-ins with formula validation engines, contributed to a large-scale PHP backend serving tens of thousands of users, and driven three rounds of WCAG 2.1 AA accessibility audits.
+			From frontend SPAs and Nuxt sites to Office.js add-ins, Java desktop apps, and mobile builds, I focus on clean architecture, measurable performance, and accessibility.
 		</p>
 
 		<SubsectionTitle>
